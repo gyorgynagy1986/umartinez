@@ -2,12 +2,19 @@
   min-height: 25.8rem;
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  background-color: #1848920D;
   display: flex;
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
   overflow: hidden;
+}
+
+.h2 {
+font-size: 22px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
 }
 
 .containerTextleftReserved span {
@@ -39,20 +46,17 @@
 .containerTextleftP {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  /* or 21px */
-  color: #fff4e5;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 0.5rem;
 }
 
 .containerTextleftReserved {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
   /* or 21px */
-  color: #fff4e5;
   display: flex;
   gap: 1rem;
 }
@@ -63,21 +67,18 @@
   font-size: 14px;
   line-height: 150%;
   /* or 21px */
-  color: #fff4e5;
   margin-top: 21.5px;
 }
 
-.containerTextleft a {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+.learnMore{
+  font-weight: 700;
+  font-size: 16px !important;
   line-height: auto;
-  color: var(--titleColor);
-  text-decoration-line: underline;
+  color:  rgba(163, 105, 40, 1);
 }
 
-.containerTextleft a:hover {
-  color: var(--titleColor4Hover);
+.learnMore:hover {
+  color: black;
 }
 
 .containerCookie {
@@ -91,7 +92,6 @@
   .container {
     min-height: 33.8rem;
     height: 100%;
-    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,6 +111,7 @@
 
   .containerTextleft a {
     margin: 0 !important;
+    
   }
 
   .containerCookie {
@@ -141,7 +142,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    color: #fff4e5;
     margin-bottom: 4rem;
   }
 }

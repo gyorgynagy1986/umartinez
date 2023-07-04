@@ -28,7 +28,9 @@ export default function Home() {
           <Event />
           <Divider />
           <JoinUs />
+          <Divider />
           <Contact reservation={links.reservation} />
+          <Divider />
         </main>
       </ParallaxProvider>
     </>

@@ -1,5 +1,4 @@
 .container {
-  min-height: 322px;
   margin-top: 5rem;
   display: flex;
   padding-right: 8.5rem;
@@ -11,7 +10,6 @@
 @media only screen and (max-width: 1150px) {
   .container {
     margin-top: 0rem;
-    margin-bottom: 9rem;
   }
 }
 
@@ -46,7 +44,7 @@
 .containerText h2 {
   color: var(--titleColor);
   font-weight: 800;
-  font-size: max(28px, min(9vw, 48px));
+  font-size: max(28px, min(9vw, 36px));
 
   letter-spacing: 0.02em;
   line-height: normal;
@@ -65,7 +63,7 @@
 
 @media only screen and (max-width: 681px) {
   .container {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
     padding: 0;
     padding-right: 2rem;
     padding-left: 2rem;

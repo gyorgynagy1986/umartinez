@@ -9,3 +9,11 @@
 .heightPrefix {
     margin-top: -10rem !important;
 }
+
+
+@media only screen and (max-width: 681px) { 
+    .container {
+        height: 10rem;       
+    }
+ 
+}

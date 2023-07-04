@@ -3,10 +3,10 @@
 import React from "react";
 import style from "./JoinUs.module.css";
 import Button from "../UI/Buttons/Button";
-import { Dosis } from "next/font/google";
+import { Orelega_One } from 'next/font/google'
 import { useParallax } from "react-scroll-parallax";
 
-const dosis = Dosis({ subsets: ["latin"] });
+const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
 const textContent = {
   h2: "Dolgozz velünk!",

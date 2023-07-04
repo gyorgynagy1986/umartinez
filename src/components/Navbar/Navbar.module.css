@@ -16,7 +16,7 @@
 }
 
 .footerNav {
-    background-color: #222222;
+    background-color:inherit;
     justify-content: space-between !important;
 }
 
