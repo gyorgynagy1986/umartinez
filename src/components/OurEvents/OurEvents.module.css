@@ -1,0 +1,166 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    min-height: 500px;
+}
+
+.imageContainer {
+    width: 100%;
+    order: 1;
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-90deg, #181818 8%, rgba(24, 24, 24, 0) 69.23%, rgba(24, 24, 24, 0) 100%);
+    z-index: 2;
+}
+
+.imageContainer img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textContainer {
+    max-width: 37%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-right: 8.5rem;
+    order: 2;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .container {
+        background-image:none;
+        height: 100%;
+        min-height: 410px;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(-360deg, #181818 3.15%, rgba(24, 24, 24, 0) 22.23%, rgba(24, 24, 24, 0) 101%);
+        z-index: 2;
+    }
+
+    .textContainer {
+        max-width: 100%;
+        padding-top: 0;
+        padding-bottom: 9rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-top: 3rem;
+      }
+
+    .imageContainer img {
+        position: relative;
+    }    
+}
+
+
+.textContainer h2 {
+    color: var(--titleColor);
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    line-height: 61px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.textContainer p {
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-bottom: 4rem;
+}
+
+.btnContainer button:nth-child(1) {
+    margin-right: 5rem;
+}
+
+.socialContainer {
+    display: flex;
+}
+
+.socialContainerItem {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.socialContainerItem img {
+     margin-right: 1rem;
+}
+
+.socialContainerItem button:nth-child(1) {
+     margin-right: 4rem;
+}
+
+@media only screen and (max-width: 681px) {
+    .imageContainer {
+        min-height: 177px;
+    }
+    
+    .imageContainer img {
+        min-height: 177px;
+    }
+  
+    .textContainer h2 {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .textContainer p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .textContainer {
+        margin-top: 0;
+        padding-bottom: 5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+
+    }
+
+    .socialContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .socialContainerItem {
+        display: flex;
+        justify-content: center;
+    }
+
+    .socialContainerItem a button:nth-child(1) {
+        margin: 0 !important;
+    }
+
+      .socialContainerItem:not(:last-child) {
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }
+
+
+}

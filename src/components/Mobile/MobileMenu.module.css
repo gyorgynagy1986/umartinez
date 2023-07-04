@@ -1,0 +1,85 @@
+.mobileMenu {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.mobileMenuContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding-top: 25vh; 
+    padding-bottom: 10vh; 
+    background-color: var(--mobileMenuColor);
+}
+
+.navigation {
+    width: 100%;
+    height: 10rem;
+    position: relative;
+}
+
+
+.mobileMenuUl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileMenu a li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+.mobileMenuSocialContainer {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+   margin-bottom: 4rem;
+}
+
+
+.mobileMenuUl a:not(:last-child) {
+   margin-bottom: 3rem;
+}
+
+.mobileMenuUl a:nth-child(5) {
+    margin-bottom: 4rem;
+ }
+
+
+.ul li:nth-child(5) {
+    margin-right: 3rem;
+}
+
+.social {
+    cursor: pointer;
+}
+
+.social img:nth-child(1) {
+    margin-right: 18.71px; 
+}
+
+.social img:nth-child(2) {
+    margin-right: 28.74px; 
+}
+
+.active {
+    color: var(--titleColor) !important;
+    font-size: 20rem;
+}
+
+  

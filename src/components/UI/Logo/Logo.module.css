@@ -1,0 +1,40 @@
+.logoMain {
+    left: 8.5rem;
+    top: 50px;
+    z-index: 0;
+    position: absolute;
+ }
+
+ .logoMain img {
+    width: 150px;
+    height:  150px;;
+ }
+
+
+ @media only screen and (max-width: 1150px) {
+    
+    .logoMain {
+        left: 4rem;
+        top: 50px;
+
+     }
+    
+    .logoMain img {
+        width: 100px;
+        height:  100px;;
+     }
+  }
+
+
+  @media only screen and (max-width: 681px) {
+    .logoMain {
+        top: 15px;
+        left: 2rem;        
+     }
+   
+    .logoMain img {
+        width: 60px;
+        height:  60px;;
+        
+     }
+  }

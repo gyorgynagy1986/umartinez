@@ -1,0 +1,73 @@
+:root {
+  --bcColor:hsla(0, 0%, 100%, 1);
+  --mainTextColor:#184892;
+  --titleColor:#184892;
+  --titleColor2:#00C2FF;
+  --navTextColor: hsla(216, 72%, 33%, 1);
+  --mobileMenuColor:#2D2D2D;
+
+  --btn1Color: #184892;
+  --btn2Color:  rgba(163, 105, 40, 1);
+  --btnTextColor: #FFEEEE;
+
+  --titleColorHover:#2a5faf;
+  --titleColor2Hover:radial-gradient(85.42% 369.23% at 0% 155.68%, #009D8C 0%, #003FE1 53.88%, #3400C9 100%);
+  --titleColor3Hover: #999999;
+  --titleColor4Hover:#EE0000;
+  --navHover:#184892;
+}
+
+*::-webkit-scrollbar {
+  width: .8em;
+  background-color: #fde4cf ;
+} 
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f4730ab2 ;
+  height: 300px;
+  border-radius: 50px;
+}
+
+*:focus, *:active {
+  box-shadow: none;
+  outline: none !important;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  outline: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.overflow-hidden {
+overflow: hidden !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-size: 62.5%; 
+  scroll-behavior: inherit;
+}
+
+body {
+ background-color: var(--bcColor);
+ color: var(--mainTextColor);
+ margin-inline:auto;
+ position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

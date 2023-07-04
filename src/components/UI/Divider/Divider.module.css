@@ -1,0 +1,11 @@
+.container {
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heightPrefix {
+    margin-top: -10rem !important;
+}
