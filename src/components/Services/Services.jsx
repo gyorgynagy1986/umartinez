@@ -10,7 +10,7 @@ const dosis = Orelega_One({ subsets: ['latin'], weight: "400" })
 
 const textContent = {
     h2: 'Szolgáltatások ',
-    p: 'Örömmel várjuk asztalfoglalásod éttermünkben, ha céges rendezvényt szervezel, vagy megünnepelnél egy különleges pillanatot családoddal vagy barátaiddal. Mi biztosítjuk a finom ételeket és a jó hangulatot!',
+    p: 'Foglalj asztalt nálunk, ha céges rendezvényt szervezel, ünnepelnél a barátaiddal, vagy egyszerűen csak élveznéd a Bartók hangulatát egy sangría társaságában. Igazi spanyol életérzéssel várunk!',
     p1:'Céges rendezvények',
     p2: 'baráti összejövetelek',
     p3: 'születésnapok'
@@ -18,7 +18,7 @@ const textContent = {
 
   const textContentEn = {
     h2: 'Services ',
-    p: 'We are looking forward to your table reservation in our restaurant, whether it is for a corporate event or celebrating a special moment with your family or friends. We guarantee the delicious food and a great atmosphere!',
+    p: 'Book a table with us if you\'re organizing a company event, celebrating with friends, or simply looking to enjoy the ambience of Bartók with a glass of sangría. We are waiting for you with authentic Spanish vibes!',
     p1:'Corporate events',
     p2: 'get-togethers',
     p3: 'birthday celebrations'

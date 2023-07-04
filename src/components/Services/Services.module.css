@@ -7,7 +7,7 @@
 
 .prefixContainer {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--maxWidth);
   display: flex;
   margin-inline: auto;
 }
@@ -42,13 +42,13 @@
 
 .textContainer h2 {
   color: var(--titleColor);
-  font-size: max(28px, min(9vw, 48px));
+  font-size: max(var(--sectionTitleMin), min(9vw, var(--sectionTitleMax)));
   font-weight: 800;
   margin-bottom: 2rem;
 }
 
 .textContainer p {
-  font-size: max(16px, min(4vw, 18px));
+  font-size: max(18px, min(4vw, 20px));
   line-height: 30px;
 }
 

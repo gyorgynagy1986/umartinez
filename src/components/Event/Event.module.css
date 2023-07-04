@@ -15,7 +15,7 @@
 
 .containerText {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--maxWidth);
   padding-top: 4rem;
   padding-bottom: 4rem;
   padding-left: 18.95rem;
@@ -44,7 +44,7 @@
 .containerText h2 {
   color: var(--titleColor);
   font-weight: 800;
-  font-size: max(28px, min(9vw, 36px));
+  font-size: max(28px, min(6vw, 36px));
 
   letter-spacing: 0.02em;
   line-height: normal;
@@ -71,7 +71,6 @@
 
   .containerText h2 {
     font-weight: 800;
-    font-size: 28px;
     line-height: 35px;
   }
 
@@ -83,11 +82,7 @@
     padding-top: 3rem;
   }
 
-  .containerText p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-  }
+
 
   .btnContainer {
     display: flex;

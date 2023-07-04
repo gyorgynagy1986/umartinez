@@ -1,86 +1,77 @@
 .container {
-    display: flex;
-    padding-right: 8.5rem;
-    padding-left: 8.5rem;
-    padding-bottom: 1rem;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  padding-right: 8.5rem;
+  padding-left: 8.5rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1150px) {
-    .container {
-      padding-top: 0rem;
-    }
+  .container {
+    padding-top: 0rem;
+  }
 }
 
 .containerText {
-    width: 100%;
-    padding-left: 20%;
-    padding-right:20% ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 1150px) {
-    .containerText {
-      padding-top: 0rem;
-      padding-left: 4rem;
-      padding-right:4rem;
-    }
+  .containerText {
+    padding-top: 0rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .containerText h2 {
-    color: var(--titleColor);
-    font-weight: 800;
-    font-size: max(28px, min(9vw, 48px));
-    margin-bottom: 2rem;
-    text-align: center;
+  color: var(--titleColor);
+  font-weight: 800;
+  font-size: max(var(--sectionTitleMin), min(9vw, var(--sectionTitleMax)));
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .containerText span {
-    color:  rgba(163, 105, 40, 1);
-    font-weight: 700;
-    text-decoration:underline ;
-    cursor: pointer;
+  color: rgba(163, 105, 40, 1);
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .containerText p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 3rem;
-
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 681px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
 
-    .containerText h2 {
-        font-weight: 800;
-        font-size: 28px;
-        line-height: 35px;
-    }
 
-    .containerText p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-    }
 
-    .containerText {
-        margin-top: 0;
-        padding-bottom: 5rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
-        padding-top: 2rem;
+  .containerText {
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 0;
+  }
 
-    }
-
-    .container {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-    } 
-
+  .container {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
 }

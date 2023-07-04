@@ -3,7 +3,7 @@
 import React from "react";
 import style from "./JoinUs.module.css";
 import Button from "../UI/Buttons/Button";
-import { Orelega_One } from 'next/font/google'
+import { Orelega_One } from "next/font/google";
 import { useParallax } from "react-scroll-parallax";
 
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
@@ -22,14 +22,14 @@ const textContentEn = {
 
 const text = (
   <p className={style.h2}>
-    Írj nekünk a <span>hola@fuegobp.hu</span> e-mail címre és küldd el
-    önéletrajzod a pozíció megjelölésével. Amint tudunk, visszajelzünk!
+    Küldd el önéletrajzod az <span>hola@umartinez.hu </span> e-mail címre, mi
+    pedig hamarosan keresni fogunk!
   </p>
 );
 const textEn = (
   <p className={style.h2}>
-    Send us an e-mail to <span>hola@fuegobp.hu</span> with your CV and position
-    you’d be interested in. We’ll get back to you as soon as possible!
+    Send us your CV to <span>hola@umartinez.hu</span>and we’ll get back to you
+    soon!
   </p>
 );
 

@@ -9,7 +9,7 @@
 
 .imageContainer {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--maxWidth);
   height: 100%;
   z-index: -1;
   margin: 0 auto;
@@ -45,7 +45,7 @@
 }
 
 .textContainer p {
-  font-size: max(16px, min(4vw, 20px));
+  font-size: max(18px, min(4vw, 20px));
   line-height: 30px;
   margin-bottom: 4rem;
 }
@@ -101,12 +101,11 @@
 
   .textContainer {
     max-width: 100%;
-    top: -1rem;
+    top: -5rem;
   }
 
   .textContainer {
     margin-top: 0;
-    padding-bottom: 5rem;
     padding-right: 1rem;
     padding-left: 1rem;
     padding-top: 2rem;

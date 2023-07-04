@@ -8,7 +8,8 @@ import Image from "next/image";
 import Button from "../UI/Buttons/Button";
 import facebook from "../../../public/assets/social/facebook.svg";
 import instagram from "../../../public/assets/social/instagram.svg";
-import logo_footer from "../../../public/assets/logo/logo_footer.svg";
+import logo_footer from "../../../public/assets/logo/logo.svg";
+import logo from "../../../public/assets/logo/logo.svg";
 import hambiOpen from "../../../public/assets/hambi/hambi_open.svg";
 import hambiClose from "../../../public/assets/hambi/hambi_close.svg";
 import MobileMenu from "../Mobile/MobileMenu";
@@ -30,7 +31,7 @@ const links = {
   reservation: "https://reservours.com/fuego/tablereservation?s=website",
 };
 
-const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
+const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
   const [mobileMenu, SetMobileMene] = useState(false);
   const pathname = usePathname();
 
@@ -52,22 +53,24 @@ const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
 
   const navClass = `${style.nav} ${nav && style.navNav} ${
     NavFooter && style.footerNav
-  } ${colorMobileMenu && style.colorMobileMenu}`;
+  } ${colorMobileMenu && style.colorMobileMenu} ${
+    stickyPosition && style.stickyContainer
+  }`;
 
   const linkClass = `${NavFooter && style.logoFooterMobile}`;
-  
+
   const containerLogic = `${style.rightItemsContainer} ${
     NavFooter && style.ulCenter
   } ${NavFooter && style.containerUlMobile}`;
-  
+
   const ulLogic = `${style.ul} ${nav && style.ulHide} ${
     NavFooter && style.ulMobile
   }`;
-  
+
   const socialLinkContainerLogic = `${style.social} ${nav && style.socialNav} ${
     NavFooter && style.socialNavFooter
   }`;
-  
+
   const languageLinksLogic = `${style.lng} ${NavFooter && style.lngHide} ${
     nav && style.lngNav
   }`;
@@ -98,10 +101,17 @@ const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
         )}
 
         <div className={containerLogic}>
+          {nav  && (
+            <Image
+              priority
+              className={style.logo}
+              alt="umartinez étterem logója"
+              src={logo}
+            />
+          )}{" "}
           <ul className={ulLogic}>
             <NavItems />
           </ul>
-
           <div className={socialLinkContainerLogic}>
             <Link href={links.facebook}>
               <Image src={facebook} alt="Fuego facebbok oldala" />
@@ -110,11 +120,9 @@ const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
               <Image src={instagram} alt="Fuego instagram oldala" />
             </Link>
           </div>
-
           <div className={languageLinksLogic}>
             <LanguageLinks />
           </div>
-
           <div className={`${nav && style.btnNav}`}>
             <Button
               btnHoverPrefix={btnHoverPrefix === "true" ? true : false}

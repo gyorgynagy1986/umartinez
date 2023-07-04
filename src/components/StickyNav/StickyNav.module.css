@@ -14,6 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid rgba(163, 105, 40, 1);
 }
 
 .opacity {
@@ -23,25 +24,18 @@
 
 .logo {
   position: absolute;
-  width: 60px;
+  width: 90px;
   left: 8.5rem;
   z-index: 0;
 }
 
 @media only screen and (max-width: 1150px) {
   .logo {
-    left: 4.5rem;
+   display: none;
   }
  }
 
 
-
-@media only screen and (max-width: 681px) {
-  .logo {
-    left: 20px;
-  }
-
-}
 
 
 

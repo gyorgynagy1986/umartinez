@@ -4,7 +4,7 @@
   --titleColor:#184892;
   --titleColor2:#00C2FF;
   --navTextColor: hsla(216, 72%, 33%, 1);
-  --mobileMenuColor:#2D2D2D;
+  --mobileMenuColor:#ffffff;
 
   --btn1Color: #184892;
   --btn2Color:  rgba(163, 105, 40, 1);
@@ -15,6 +15,15 @@
   --titleColor3Hover: #999999;
   --titleColor4Hover:#EE0000;
   --navHover:#184892;
+
+  --sectionTitleMax:48px;
+  --sectionTitleMin: 28px;
+
+  --sectionPMax:18px;
+  --sectionPMin: 20px;
+
+  --maxWidth:1440px;
+
 }
 
 *::-webkit-scrollbar {

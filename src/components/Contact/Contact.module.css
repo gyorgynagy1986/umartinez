@@ -8,7 +8,7 @@
 
 .prefixContainer {
   width: 100%;
-  max-width: 1440px;
+  max-width: var(--maxWidth);
   display: flex;
   margin-inline: auto;
   justify-content: center;
@@ -18,7 +18,6 @@
   width: 100%;
   height: 100%;
   position: relative;
-  
 }
 
 .imageContainer img {
@@ -39,11 +38,11 @@
 }
 
 .textContainer p {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0em;
-  }
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+}
 
 @media only screen and (max-width: 1150px) {
   .container {
@@ -65,19 +64,6 @@
     justify-content: unset;
   }
 
-  .layer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(
-      360deg,
-      #181818 3.15%,
-      rgba(24, 24, 24, 0) 22.23%,
-      rgba(24, 24, 24, 0) 101%
-    );
-    z-index: 2;
-  }
-
   .textContainer {
     max-width: 100%;
     display: flex;
@@ -95,8 +81,6 @@
     position: relative;
   }
 
-
-
   .textBoxContainer {
     max-width: 35rem;
     width: 100%;
@@ -105,7 +89,7 @@
 
 .textContainer h2 {
   color: var(--titleColor);
-  font-size: 48px;
+  font-size: max(var(--sectionTitleMin), min(9vw, var(--sectionTitleMax)));
   letter-spacing: 0.02em;
   line-height: 61px;
   font-weight: 800;
@@ -142,6 +126,14 @@
 }
 
 @media only screen and (max-width: 681px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .imageContainer {
     min-height: 177px;
   }
@@ -152,13 +144,14 @@
 
   .textContainer h2 {
     font-weight: 800;
-    font-size: 28px;
     line-height: 35px;
   }
 
   .textContainer {
+    width: 100%;
+    min-width: 100%;
     margin-top: 0;
-    padding-bottom: 5rem;
+    padding-bottom:0;
     padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 2rem;
@@ -180,7 +173,7 @@
 
   .textContainer p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
   }
 }

@@ -14,7 +14,7 @@ const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
 const textContent = {
   h1: "Ultramarinos Martínez",
-  p: "Deli and bar, bar and deli, Spanish flavors on site and for takeaway. Come and taste our delicacies, and take your favorites home!",
+  p: "Deli és bár, bár és deli, spanyol ízek helyben és elvitelre is. Gyere és kóstold meg finomságainkat, kedvenceidet pedig vidd haza!",
   btn: "asztalfoglalás",
   btn2: "kapcsolat",
   url: "/kapcsolat",
