@@ -52,3 +52,16 @@
     color: var(--navTextColor);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .buttonGetInTouch {
+    font-size: 18px;
+  
+  }
+
+  .butnBlue {
+
+    font-size: 18px;
+  }
+ 
+}

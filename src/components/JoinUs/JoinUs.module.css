@@ -1,7 +1,6 @@
 .container {
     min-height: 322;
     display: flex;
-    margin-top: 4rem;
     margin-bottom: 8rem;
     padding-right: 5%;
     padding-left: 5%;
@@ -17,7 +16,6 @@
 
 .containerText {
     width: 100%;
-    padding-top: 4rem;
     padding-bottom: 4rem;    
     padding-left: 20%;
     padding-right:20% ;
