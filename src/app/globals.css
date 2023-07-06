@@ -22,7 +22,9 @@
   --sectionPMax:18px;
   --sectionPMin: 20px;
 
-  --maxWidth:1440px;
+  --maxWidth:1280px;
+  --maxWidth2:1920px;
+  --fontSizeP: max(18px, min(4vw, 20px));
 
 }
 

@@ -1,17 +1,17 @@
-.logoMain {
+.logo {
   left: 8.5rem;
   top: 5px;
   z-index: 0;
   position: absolute;
 }
 
-.logoMain img {
+.logo img {
    width:90px;
     height: 90px;
 }
 
 @media only screen and (max-width: 1150px) {
-  .logoMain {
+  .logo {
     left: 4rem;
     width:90px;
   }
@@ -19,12 +19,12 @@
 }
 
 @media only screen and (max-width: 681px) {
-  .logoMain {
+  .logo {
     left: 2rem;
     top: 10px;
   }
 
-  .logoMain img {
+  .logo img {
     width: 60px;
     height: 60px;
   }

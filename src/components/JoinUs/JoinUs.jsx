@@ -4,7 +4,6 @@ import React from "react";
 import style from "./JoinUs.module.css";
 import Button from "../UI/Buttons/Button";
 import { Orelega_One } from "next/font/google";
-import { useParallax } from "react-scroll-parallax";
 
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
@@ -34,17 +33,12 @@ const textEn = (
 );
 
 const JoinUs = ({ lang }) => {
-  const parallax = useParallax({
-    opacity: [-1, 4],
-    speed: -5,
-  });
-
   const btnLogic = !lang ? textContent.btn : textContentEn.btn;
   const btnUrl = !lang ? textContent.url : textContentEn.url;
   const h2Logic = !lang ? textContent.h2 : textContentEn.h2;
 
   return (
-    <section ref={parallax.ref} className={style.container}>
+    <section className={style.container}>
       <div className={style.containerText}>
         <h2 className={dosis.className}>{h2Logic}</h2>
         {!lang ? text : textEn}

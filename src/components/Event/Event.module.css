@@ -54,7 +54,7 @@
 
 .containerText p {
   text-align: center;
-  font-size: 18px;
+  font-size: var(--fontSizeP);
   font-style: normal;
   font-weight: 400;
   line-height: 150%;

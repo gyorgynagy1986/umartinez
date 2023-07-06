@@ -48,7 +48,7 @@
 }
 
 .textContainer p {
-  font-size: max(18px, min(4vw, 20px));
+  font-size: var(--fontSizeP);
   line-height: 30px;
 }
 

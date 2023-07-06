@@ -4,7 +4,6 @@ import style from './Services.module.css'
 import { Orelega_One } from 'next/font/google'
 import Image from 'next/image'
 import HeroCoverPhoto from '../../../public/assets/sections/Our_services2.png'
-import { useParallax } from 'react-scroll-parallax';
 
 const dosis = Orelega_One({ subsets: ['latin'], weight: "400" })
 
@@ -32,10 +31,7 @@ const Services = ({lang}) => {
   const liLogic3 = !lang ? textContent.p3 : textContentEn.p3;
   const pLgoic = !lang ? textContent.p : textContentEn.p;
 
-  const parallax = useParallax({
-    opacity	: [-1, 5],
-    speed:-1
-  });
+
 
   return (
     <section  className={style.container}>
@@ -43,7 +39,7 @@ const Services = ({lang}) => {
          <div className={style.imageContainer}>
           <Image placeholder="blur" alt='Fuego' src={HeroCoverPhoto}/>
         </div>
-        <div ref={parallax.ref} className={style.textContainer}>
+        <div className={style.textContainer}>
             <h2 className={dosis.className}>{titleLogic}</h2>
             <ul className={style.ulContainer}>
               <li>{liLogic}</li>

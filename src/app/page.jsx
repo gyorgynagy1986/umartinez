@@ -6,7 +6,6 @@ import Event from "@/components/Event/Event";
 import JoinUs from "@/components/JoinUs/JoinUs";
 import Contact from "@/components/Contact/Contact";
 import Services from "@/components/Services/Services";
-import { ParallaxProvider } from "react-scroll-parallax";
 import Divider from "@/components/UI/Divider/Divider";
 
 const links = {
@@ -18,7 +17,6 @@ const links = {
 export default function Home() {
   return (
     <>
-      <ParallaxProvider>
         <Hero reservation={links.reservation} />
         <main>
           <Divider marginPrefix={true} />
@@ -32,7 +30,6 @@ export default function Home() {
           <Contact reservation={links.reservation} />
           <Divider />
         </main>
-      </ParallaxProvider>
     </>
   );
 }

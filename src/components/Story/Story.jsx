@@ -4,7 +4,6 @@ import style from "./Story.module.css";
 import { Orelega_One } from "next/font/google";
 import Button from "../UI/Buttons/Button";
 import Image from "next/image";
-import { useParallax } from "react-scroll-parallax";
 
 import ourStoryCoverPhoto from "../../../public/assets/sections/Our_story.png";
 
@@ -36,10 +35,7 @@ const Story = ({ lang }) => {
   const btnUrl = `${!lang ? textContent.url : textContentEn.url}`;
   const btnName = `${!lang ? textContent.btn : textContentEn.btn}`;
 
-  const parallax = useParallax({
-    opacity: [-1, 5],
-    speed: 1,
-  });
+
 
   return (
     <section className={style.container}>
@@ -53,7 +49,7 @@ const Story = ({ lang }) => {
           />
         </div>
 
-        <div ref={parallax.ref} className={style.textContainer}>
+        <div className={style.textContainer}>
           <h2 className={dosis.className}>{h2Text}</h2>
           <p>
             {pText} <br />

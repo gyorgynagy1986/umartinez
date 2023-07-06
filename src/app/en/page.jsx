@@ -6,7 +6,8 @@ import Event from "@/components/Event/Event";
 import JoinUs from "@/components/JoinUs/JoinUs";
 import Contact from "@/components/Contact/Contact";
 import Services from "@/components/Services/Services";
-import { ParallaxProvider } from "react-scroll-parallax";
+import Divider from "@/components/UI/Divider/Divider";
+
 
 const links = {
   facebook: "https://www.facebook.com/FUEGOchicken/?locale=hu_HU",
@@ -17,7 +18,6 @@ const links = {
 export default function Home() {
   return (
     <>
-      <ParallaxProvider>
         <Hero lang={true} reservation={links.reservation} />
         <main>
           <Divider marginPrefix={true} />
@@ -30,7 +30,6 @@ export default function Home() {
           <Divider />
           <Contact lang={true} reservation={links.reservation} />
         </main>
-      </ParallaxProvider>
     </>
   );
 }

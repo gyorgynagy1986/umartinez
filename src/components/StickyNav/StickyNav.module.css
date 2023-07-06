@@ -6,15 +6,18 @@
     left: 0;
     background: #ffffff;
     z-index: 8888888;
+    border-bottom: 1px solid rgba(163, 106, 40, 0.287);
 }
 
 .stickynavContainer {
   height: 8rem;
   width: 100%;
+  max-width: var(--maxWidth2);
+  margin-inline: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid rgba(163, 105, 40, 1);
+  position: relative;
 }
 
 .opacity {

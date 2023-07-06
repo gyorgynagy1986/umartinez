@@ -7,7 +7,6 @@ import StickyNav from "../StickyNav/StickyNav";
 import Button from "../UI/Buttons/Button";
 import Image from "next/image";
 import ButtonGetInTouch from "../UI/Buttons/ButtonGetInTouch";
-import { useParallax } from "react-scroll-parallax";
 import HeroCoverPhoto from "../../../public/assets/hero/hero.png";
 
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
@@ -30,10 +29,7 @@ const textContentEn = {
 
 const Hero = ({ reservation, lang }) => {
   const [stickyNav, setStickyNav] = useState(false);
- 
-  const parallax = useParallax({
-    speed: 10,
-  });
+
 
   const menuRef = useRef(null);
 
@@ -58,7 +54,7 @@ const Hero = ({ reservation, lang }) => {
       <div className={style.imageContainer}>
         <Image placeholder="blur" alt="Fuego" priority src={HeroCoverPhoto} />
       </div>
-      <div ref={parallax.ref} className={style.textContainer}>
+      <div className={style.textContainer}>
         <h1 className={dosis.className}>
           {!lang ? textContent.h1 : textContentEn.h1}
         </h1>

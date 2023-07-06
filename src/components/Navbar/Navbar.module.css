@@ -19,9 +19,11 @@
 }
 
 .footerNav {
+  max-width: var(--maxWidth2);
   background-color: inherit;
   justify-content: space-between !important;
   height: 12rem;
+  margin-inline: auto;
 }
 
 .ul {
@@ -35,7 +37,7 @@
   margin-right: 4rem;
   font-weight: 300;
   color: var(--navTextColor);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   font-weight: 500;
   text-decoration: none;
@@ -111,33 +113,16 @@
 
 .logo {
   position: absolute;
-  width:90px;
+  width: 90px;
   left: 8.5rem;
   z-index: 0;
   display: none;
 }
+@media only screen and (max-width: 1270px) {
 
-@media only screen and (max-width: 1150px) {
-  .logo {
-    display: block;
-    left: 4rem;
-    width:90px;
-  }
-}
-
-@media only screen and (max-width: 681px) {
-  .logo {
-    left: 2rem;
-    width:60px;
-  }
 }
 
 @media only screen and (max-width: 1150px) {
-  .nav {
-    padding-right: 4rem;
-    padding-left: 4rem;
-    justify-content: flex-end;
-  }
 
   .ulHide {
     display: none;
@@ -145,6 +130,18 @@
 
   .ulCenter {
     width: 100%;
+  }
+
+  .nav {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    justify-content: flex-end;
+  }
+
+  .logo {
+    display: block;
+    left: 4rem;
+    width: 90px;
   }
 
   .logoIntabletFotterDisplayNone {
@@ -203,6 +200,11 @@
 
   .navNav {
     height: 8rem;
+  }
+
+  .logo {
+    left: 2rem;
+    width: 60px;
   }
 }
 

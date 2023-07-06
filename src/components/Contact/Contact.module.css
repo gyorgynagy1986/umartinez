@@ -37,6 +37,44 @@
   min-width: 530px;
 }
 
+.textContainer h2 {
+  color: var(--titleColor);
+  font-size: max(var(--sectionTitleMin), min(9vw, var(--sectionTitleMax)));
+  letter-spacing: 0.02em;
+  line-height: 61px;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.textBoxContainer {
+  max-width: 45rem;
+}
+
+.textBoxContainer div {
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+}
+
+.textBoxContainer div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.textBoxContainer div:nth-child(1) {
+  margin-bottom: 3rem;
+}
+
+.textBoxContainer div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .textContainer p {
   font-size: 24px;
   font-weight: 400;
@@ -87,44 +125,6 @@
   }
 }
 
-.textContainer h2 {
-  color: var(--titleColor);
-  font-size: max(var(--sectionTitleMin), min(9vw, var(--sectionTitleMax)));
-  letter-spacing: 0.02em;
-  line-height: 61px;
-  font-weight: 800;
-  margin-bottom: 2rem;
-}
-
-.btnContainer {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-}
-
-.textBoxContainer {
-  max-width: 45rem;
-}
-
-.textBoxContainer div {
-  font-size: 18px;
-  line-height: 30px;
-  display: flex;
-}
-
-.textBoxContainer div:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.textBoxContainer div:nth-child(1) {
-  margin-bottom: 3rem;
-}
-
-.textBoxContainer div {
-  display: flex;
-  justify-content: space-between;
-}
-
 @media only screen and (max-width: 681px) {
   .container {
     width: 100%;
@@ -151,7 +151,7 @@
     width: 100%;
     min-width: 100%;
     margin-top: 0;
-    padding-bottom:0;
+    padding-bottom: 0;
     padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 2rem;
