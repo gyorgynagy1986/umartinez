@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import LogoMain from "@/components/UI/Logo/LogoMain";
 import { Mukta } from "next/font/google";
+import Divider from '@/components/UI/Divider/Divider'
 
 const mukta = Mukta({ subsets: ["latin"], weight: "500" });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <LogoMain />
         <Navbar nav={true} />
         {children}
+        <Divider />
         <Navbar NavFooter={true} />
         <Footer />
       </body>

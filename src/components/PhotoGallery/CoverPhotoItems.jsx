@@ -12,6 +12,12 @@ import photo4 from '../../../public/assets/gallery/covers/Gallery5.png'
 import photo5 from '../../../public/assets/gallery/covers/Gallery6.png'
 import photo6 from '../../../public/assets/gallery/covers/Gallery7.png'
 import photo7 from '../../../public/assets/gallery/covers/Gallery8.png'
+import photo8 from '../../../public/assets/gallery/covers/Gallery9.png'
+import photo9 from '../../../public/assets/gallery/covers/Gallery10.png'
+import photo10 from '../../../public/assets/gallery/covers/Gallery11.png'
+import photo11 from '../../../public/assets/gallery/covers/Gallery12.png'
+
+
 
   const photoGalleryCoverPhots = [
     { 
@@ -53,6 +59,26 @@ import photo7 from '../../../public/assets/gallery/covers/Gallery8.png'
       id:8, 
       alt:'fuego geléria cover photos',
       url:photo7
+    },
+    { 
+      id:9, 
+      alt:'fuego geléria cover photos',
+      url:photo8
+    },
+    { 
+      id:10, 
+      alt:'fuego geléria cover photos',
+      url:photo9
+    },
+    { 
+      id:11, 
+      alt:'fuego geléria cover photos',
+      url:photo10
+    },
+    { 
+      id:12, 
+      alt:'fuego geléria cover photos',
+      url:photo11
     },
   
   ]

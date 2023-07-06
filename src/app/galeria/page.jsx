@@ -5,9 +5,9 @@ import style from './page.module.css'
 import CoverPhotoItems from "@/components/PhotoGallery/CoverPhotoItems"
 import PhotoGallery from '@/components/PhotoGallery/PhotoGallery'
 
-import { Dosis } from 'next/font/google'
+import { Orelega_One } from "next/font/google";
 
-const dosis = Dosis({ subsets: ['latin'] })
+const dosis = Orelega_One({ subsets: ['latin'], weight:"400" })
 
 
 const Gallery = () => {

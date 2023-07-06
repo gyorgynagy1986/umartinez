@@ -1,12 +1,12 @@
 "use client"
 
 import Image from "next/image";
-import etlap from '../../../../public/assets/menu/1.webp'
-import itallap from '../../../../public/assets/menu/2_eng.webp'
+import etlap from '../../../../public/assets/menu/1.png'
+import itallap from '../../../../public/assets/menu/2.png'
 import style from './page.module.css'
-import { Dosis } from 'next/font/google'
+import { Orelega_One } from "next/font/google";
 
-const dosis = Dosis({ subsets: ['latin'] })
+const dosis = Orelega_One({ subsets: ['latin'], weight:"400" })
 
 const Menu = () => {
 

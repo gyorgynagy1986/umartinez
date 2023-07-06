@@ -26,12 +26,12 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
     {
       id: 1,
       title: "Photo 1",
-      imageUrl: photo,
+      imageUrl: photo
     },
     {
       id: 2,
       title: "Photo 2",
-      imageUrl: photo1,
+      imageUrl:photo1,
     },
     {
       id: 3,
@@ -134,6 +134,7 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
             <Image
               src={currentPhoto.imageUrl}
               alt={currentPhoto.title}
+              priority
               onLoad={handleImageLoad}
             />
           ) : (

@@ -28,7 +28,6 @@ export default function Home() {
           <JoinUs />
           <Divider />
           <Contact reservation={links.reservation} />
-          <Divider />
         </main>
     </>
   );

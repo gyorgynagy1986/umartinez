@@ -5,8 +5,9 @@ import ButtonGetInTouch from '@/components/UI/Buttons/ButtonGetInTouch'
 import mapPhoto from '../../../../public/assets/sections/map_contact.png' 
 import facebook from '../../../../public/assets/social/facebook.svg'
 import instagram from '../../../../public/assets/social/instagram.svg'
-import { Dosis } from 'next/font/google'
-const dosis = Dosis({ subsets: ['latin'] })
+import { Orelega_One } from "next/font/google";
+
+const dosis = Orelega_One({ subsets: ['latin'], weight:"400" })
 
 export const metadata = {
   title: 'Contact - Fuego',
