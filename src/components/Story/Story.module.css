@@ -3,6 +3,8 @@
   height: 100%;
   padding-left: 8.5rem;
   padding-right: 8.5rem;
+  position: relative;
+  z-index: 0;
 }
 
 .prefixContainer {
@@ -56,7 +58,7 @@
   margin-right: 5rem;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
   .container {
     padding-left: 4rem;
     padding-right: 4rem;

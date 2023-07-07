@@ -100,6 +100,7 @@
   line-height: 21px;
   color: var(--navTextColor);
   cursor: pointer;
+  font-weight: 800;
 }
 
 .hambi {
@@ -109,6 +110,7 @@
 .activeLang {
   color: var(--titleColor3Hover) !important;
   cursor: default !important;
+  font-weight: 500 !important;
 }
 
 .logo {
@@ -118,11 +120,9 @@
   z-index: 0;
   display: none;
 }
-@media only screen and (max-width: 1270px) {
 
-}
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
 
   .ulHide {
     display: none;
@@ -141,6 +141,7 @@
   .logo {
     display: block;
     left: 4rem;
+    top: -5px;
     width: 90px;
   }
 
@@ -205,12 +206,13 @@
   .logo {
     left: 2rem;
     width: 60px;
+    top: -5px;
   }
 }
 
 /*FOOTER NAV IN MOBILE VIEW WHICH IS ALSO THE NAV OF THE MOBILE MENU*/
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width:1250px) {
   .colorMobileMenu {
     background-color: var(--bgColor);
   }

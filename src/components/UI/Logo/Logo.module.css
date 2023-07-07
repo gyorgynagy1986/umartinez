@@ -6,16 +6,16 @@
 }
 
 .logo img {
-   width:90px;
-    height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
   .logo {
     left: 4rem;
-    width:90px;
+    width: 90px;
+    top: -5px;
   }
-
 }
 
 @media only screen and (max-width: 681px) {

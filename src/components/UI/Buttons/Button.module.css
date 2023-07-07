@@ -41,9 +41,7 @@
   font-size: 20px;
 }
 
-
-
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
   .button:hover::before {
     opacity: 0;
   }
@@ -56,12 +54,9 @@
 @media only screen and (max-width: 600px) {
   .buttonGetInTouch {
     font-size: 18px;
-  
   }
 
   .butnBlue {
-
     font-size: 18px;
   }
- 
 }

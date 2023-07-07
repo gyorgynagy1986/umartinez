@@ -30,7 +30,6 @@ const textContentEn = {
 const Hero = ({ reservation, lang }) => {
   const [stickyNav, setStickyNav] = useState(false);
 
-
   const menuRef = useRef(null);
 
   useEffect(() => {
@@ -52,7 +51,12 @@ const Hero = ({ reservation, lang }) => {
     <header ref={menuRef} className={style.container}>
       {stickyNav && <StickyNav />}
       <div className={style.imageContainer}>
-        <Image placeholder="blur" alt="Fuego" priority src={HeroCoverPhoto} />
+        <Image
+          placeholder="blur"
+          alt="Ultramarinos Martínez"
+          priority
+          src={HeroCoverPhoto}
+        />
       </div>
       <div className={style.textContainer}>
         <h1 className={dosis.className}>

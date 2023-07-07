@@ -65,9 +65,9 @@
   list-style: disc;
 }
 
-/* TABLET max-width: 1150px */
+/* TABLET max-width: 1200px */
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
   .prefixContainer {
     width: unset;
     max-width: unset;

@@ -22,13 +22,15 @@ const textContentHu = {
 };
 
 const textContentEng = {
-  btnName: "reservation",
+  btnName: "book a table now",
 };
 
 const links = {
-  facebook: "https://www.facebook.com/FUEGOchicken/?locale=hu_HU",
-  instagram: "https://www.instagram.com/fuegobp/?hl=hu",
-  reservation: "https://reservours.com/fuego/tablereservation?s=website",
+  facebook:
+    "https://www.facebook.com/Ultramarinos Martínezchicken/?locale=hu_HU",
+  instagram: "https://www.instagram.com/Ultramarinos Martínezbp/?hl=hu",
+  reservation:
+    "https://reservours.com/Ultramarinos Martínez/tablereservation?s=website",
 };
 
 const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
@@ -96,28 +98,39 @@ const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
       <nav className={navClass}>
         {NavFooter && (
           <Link className={linkClass} href="/">
-            <Image alt="Fuego étterem logója" src={logo_footer} />
+            <Image
+              alt="Ultramarinos Martínez étterem logója"
+              src={logo_footer}
+            />
           </Link>
         )}
 
         <div className={containerLogic}>
-          {nav  && (
-            <Image
-              priority
-              className={style.logo}
-              alt="umartinez étterem logója"
-              src={logo}
-            />
-          )}{" "}
+          {nav && (
+            <Link href="/">
+              <Image
+                priority
+                className={style.logo}
+                alt="umartinez étterem logója"
+                src={logo}
+              />
+            </Link>
+          )}
           <ul className={ulLogic}>
             <NavItems />
           </ul>
           <div className={socialLinkContainerLogic}>
             <Link href={links.facebook}>
-              <Image src={facebook} alt="Fuego facebbok oldala" />
+              <Image
+                src={facebook}
+                alt="Ultramarinos Martínez facebbok oldala"
+              />
             </Link>
             <Link href={links.instagram}>
-              <Image src={instagram} alt="Fuego instagram oldala" />
+              <Image
+                src={instagram}
+                alt="Ultramarinos Martínez instagram oldala"
+              />
             </Link>
           </div>
           <div className={languageLinksLogic}>

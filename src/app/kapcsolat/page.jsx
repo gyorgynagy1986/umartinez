@@ -16,8 +16,9 @@ const textContent = {
   btn2: "kapcsolat",
   facebook:
     "https://www.facebook.com/Ultramarinos Martínezchicken/?locale=hu_HU",
-  instagram: "https://www.instagram.com/fuegobp/?hl=hu",
-  reservation: "https://reservours.com/fuego/tablereservation?s=website",
+  instagram: "https://www.instagram.com/Ultramarinos Martínezbp/?hl=hu",
+  reservation:
+    "https://reservours.com/Ultramarinos Martínez/tablereservation?s=website",
 };
 
 const Contact = () => {

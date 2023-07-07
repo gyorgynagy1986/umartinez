@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Contact.module.css";
-import { Orelega_One } from 'next/font/google'
+import { Orelega_One } from "next/font/google";
 import Button from "../UI/Buttons/Button";
 import ButtonGetInTouch from "../UI/Buttons/ButtonGetInTouch";
 import Image from "next/image";
@@ -32,7 +32,11 @@ const Contact = ({ reservation, lang }) => {
     <section id="opening" className={style.container}>
       <div className={style.prefixContainer}>
         <div className={style.imageContainer}>
-          <Image placeholder="blur" alt="Fuego" src={mapPhoto} />
+          <Image
+            placeholder="blur"
+            alt="Ultramarinos Martínez"
+            src={mapPhoto}
+          />
         </div>
         <div className={style.textContainer}>
           <h2 className={dosis.className}>{h3EngLogic}</h2>

@@ -12,7 +12,7 @@
 
   --titleColorHover:#2a5faf;
   --titleColor2Hover:radial-gradient(85.42% 369.23% at 0% 155.68%, #009D8C 0%, #003FE1 53.88%, #3400C9 100%);
-  --titleColor3Hover: #999999;
+  --titleColor3Hover: #184992b9;
   --titleColor4Hover:#EE0000;
   --navHover:#184892;
 
@@ -25,6 +25,8 @@
   --maxWidth:1280px;
   --maxWidth2:1920px;
   --fontSizeP: max(18px, min(4vw, 20px));
+
+  --tablet:1200px;
 
 }
 

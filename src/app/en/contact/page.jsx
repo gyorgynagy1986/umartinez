@@ -10,7 +10,7 @@ import { Orelega_One } from "next/font/google";
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Contact - Fuego",
+  title: "Contact - Ultramarinos Martínez",
 };
 
 const textContent = {
@@ -18,9 +18,11 @@ const textContent = {
   h3: "Ultramarinos Martínez",
   btn: "book a table now",
   btn2: "Contact",
-  facebook: "https://www.facebook.com/FUEGOchicken/?locale=hu_HU",
-  instagram: "https://www.instagram.com/fuegobp/?hl=hu",
-  reservation: "https://reservours.com/fuego/tablereservation?s=website",
+  facebook:
+    "https://www.facebook.com/Ultramarinos Martínezchicken/?locale=hu_HU",
+  instagram: "https://www.instagram.com/Ultramarinos Martínezbp/?hl=hu",
+  reservation:
+    "https://reservours.com/Ultramarinos Martínez/tablereservation?s=website",
 };
 
 const Contact = () => {
@@ -30,7 +32,12 @@ const Contact = () => {
       <section className={style.container}>
         <div className={style.imageContainer}>
           <div className={style.layer}></div>
-          <Image placeholder="blur" priority alt="Fuego" src={mapPhoto} />
+          <Image
+            placeholder="blur"
+            priority
+            alt="Ultramarinos Martínez"
+            src={mapPhoto}
+          />
         </div>
         <div className={style.itemsContainer}>
           <div className={style.textContainer}>
@@ -39,16 +46,22 @@ const Contact = () => {
               1075 Budapest, Kazinczy utca 3b.
             </p>
             <p className={style.contactText}>+ 36 30 317 69 65</p>
-            <p className={style.contactText}>hola@fuegobp.hu</p>
+            <p className={style.contactText}>hola@Ultramarinos Martínezbp.hu</p>
           </div>
 
           <div className={style.btnContainer}>
             <div className={style.socialContainerItem}>
-              <Image alt="Fuego étterem facebbok oldala" src={facebook} />
+              <Image
+                alt="Ultramarinos Martínez étterem facebbok oldala"
+                src={facebook}
+              />
               <ButtonGetInTouch url={textContent.facebook} name={"facebook"} />
             </div>
             <div className={style.socialContainerItem}>
-              <Image alt="Fuego étterem isntagram oldala" src={instagram} />
+              <Image
+                alt="Ultramarinos Martínez étterem isntagram oldala"
+                src={instagram}
+              />
               <ButtonGetInTouch
                 url={textContent.instagram}
                 name={"instagram"}
