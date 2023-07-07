@@ -26,9 +26,9 @@
 
 .textContainer {
   position: relative;
-  top: -10rem;
+  top: -7rem;
   width: 90%;
-  max-width: 1280px;
+  max-width: 1150px;
   margin: 0 auto;
   height: 100%;
   background-color: var(--bcColor);
@@ -101,7 +101,7 @@
 
   .textContainer {
     max-width: 100%;
-    top: -5rem;
+    top: -3rem;
   }
 
   .textContainer {
