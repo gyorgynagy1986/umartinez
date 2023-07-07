@@ -24,6 +24,7 @@
 
   --maxWidth:1280px;
   --maxWidth2:1920px;
+  
   --fontSizeP: max(18px, min(4vw, 20px));
 
   --tablet:1200px;

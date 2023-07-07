@@ -23,7 +23,10 @@ const ContactItems = ({lang}) => {
             <p>{textLangLogic}</p>
             <p>{textLangLogic2}</p>
          </div>
-        
+         <div>
+            <p>{textLangLogic}</p>
+            <p>{textLangLogic2}</p>
+         </div>
     </>
   )
 }
