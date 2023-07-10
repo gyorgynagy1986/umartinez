@@ -27,10 +27,10 @@ const textContentEng = {
 
 const links = {
   facebook:
-    "https://www.facebook.com/Ultramarinos Martínezchicken/?locale=hu_HU",
-  instagram: "https://www.instagram.com/Ultramarinos Martínezbp/?hl=hu",
+    "https://www.facebook.com/ultramarinosbp/",
+  instagram: "https://www.instagram.com/ultramarinosbp/",
   reservation:
-    "https://reservours.com/Ultramarinos Martínez/tablereservation?s=website",
+    "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
 };
 
 const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {

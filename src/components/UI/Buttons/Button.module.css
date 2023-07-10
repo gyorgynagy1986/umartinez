@@ -9,6 +9,11 @@
   transition: all 0.4ms ease-in;
   text-transform: uppercase;
   font-weight: 700;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+  background: var(--btnHover)
 }
 
 .buttonGetInTouch {

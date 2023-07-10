@@ -10,10 +10,10 @@ import Divider from "@/components/UI/Divider/Divider";
 
 const links = {
   facebook:
-    "https://www.facebook.com/Ultramarinos Martínezchicken/?locale=hu_HU",
-  instagram: "https://www.instagram.com/Ultramarinos Martínezbp/?hl=hu",
+    "https://www.instagram.com/ultramarinosbp/",
+  instagram: "https://www.instagram.com/ultramarinosbp/",
   reservation:
-    "https://reservours.com/Ultramarinos Martínez/tablereservation?s=website",
+    "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
 };
 
 export default function Home() {
