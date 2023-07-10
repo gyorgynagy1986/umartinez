@@ -8,9 +8,9 @@ import Divider from '@/components/UI/Divider/Divider'
 const mukta = Mukta({ subsets: ["latin"], weight: "500" });
 
 export const metadata = {
-  title: "Umartinez",
+  title: "Ultramarinos Martínez",
   description:
-    "",
+    "Az Ultramarinos Martínez egy Deli és bár Budapesten, ahol spanyol ízekkel kényeztetünk helyben és elvitelre is. ",
 };
 
 export default function RootLayout({ children }) {
