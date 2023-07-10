@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export const metadata = {
-    title: 'Gallery - Fuego',
-  }
+  title: "Gallery - Ultramarinos Martínez",
+};
 
-const EngPagelayout = ({children}) => {
-  return (
-    <>{children}</>
-  )
-}
+const EngPagelayout = ({ children }) => {
+  return <>{children}</>;
+};
 
-export default EngPagelayout
+export default EngPagelayout;

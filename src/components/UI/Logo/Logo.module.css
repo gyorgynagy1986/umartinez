@@ -1,40 +1,31 @@
-.logoMain {
-    left: 8.5rem;
-    top: 50px;
-    z-index: 0;
-    position: absolute;
- }
+.logo {
+  left: 8.5rem;
+  top: 5px;
+  z-index: 0;
+  position: absolute;
+}
 
- .logoMain img {
-    width: 150px;
-    height:  150px;;
- }
+.logo img {
+  width: 90px;
+  height: 90px;
+}
 
+@media only screen and (max-width: 1200px) {
+  .logo {
+    left: 4rem;
+    width: 90px;
+    top: -5px;
+  }
+}
 
- @media only screen and (max-width: 1150px) {
-    
-    .logoMain {
-        left: 4rem;
-        top: 50px;
-
-     }
-    
-    .logoMain img {
-        width: 100px;
-        height:  100px;;
-     }
+@media only screen and (max-width: 681px) {
+  .logo {
+    left: 2rem;
+    top: 10px;
   }
 
-
-  @media only screen and (max-width: 681px) {
-    .logoMain {
-        top: 15px;
-        left: 2rem;        
-     }
-   
-    .logoMain img {
-        width: 60px;
-        height:  60px;;
-        
-     }
+  .logo img {
+    width: 60px;
+    height: 60px;
   }
+}

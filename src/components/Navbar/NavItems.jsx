@@ -66,23 +66,6 @@ const itemsEng = [
 
 const NavItems = () => {
   const pathname = usePathname();
- // const [langHandler, setLangHandler] = useState(false);
-
-  //if (pathname === '/en' && pathname === '/en/menu' && pathname === '/en/contact' &&  pathname === '/en/gallery') {
-  //  setLangHandler(true);
-  //} else {
-  //  setLangHandler(false)
-  //}
-
-  //useEffect(() => {
-  //  if (pathname.includes('/en')) {
-  //    setLangHandler(true);
-  //  } else {
-  //    setLangHandler(false)
-  //  }
-  //}, [pathname]);
-
-
   return (
     <>
       {pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? (

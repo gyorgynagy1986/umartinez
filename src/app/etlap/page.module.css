@@ -6,6 +6,8 @@
     letter-spacing: 0.02em;
     color: var(--titleColor);
     font-weight: 800;
+    margin-bottom: 5rem;
+    margin-top: 6rem;
 }
 
 .container {
@@ -29,7 +31,6 @@
 }
 
 .container img:nth-child(2) {
-    margin-bottom: 17rem;
  }
 
  @media only screen and (max-width: 681px) {
@@ -40,6 +41,7 @@
 
      .h1 {
         margin-bottom: 3rem;
+        margin-top: 0rem
     }
 
     .container img:nth-child(2) {

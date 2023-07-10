@@ -4,7 +4,7 @@
   --titleColor:#184892;
   --titleColor2:#00C2FF;
   --navTextColor: hsla(216, 72%, 33%, 1);
-  --mobileMenuColor:#2D2D2D;
+  --mobileMenuColor:#ffffff;
 
   --btn1Color: #184892;
   --btn2Color:  rgba(163, 105, 40, 1);
@@ -12,18 +12,32 @@
 
   --titleColorHover:#2a5faf;
   --titleColor2Hover:radial-gradient(85.42% 369.23% at 0% 155.68%, #009D8C 0%, #003FE1 53.88%, #3400C9 100%);
-  --titleColor3Hover: #999999;
+  --titleColor3Hover: #184992b9;
   --titleColor4Hover:#EE0000;
   --navHover:#184892;
+
+  --sectionTitleMax:48px;
+  --sectionTitleMin: 28px;
+
+  --sectionPMax:18px;
+  --sectionPMin: 20px;
+
+  --maxWidth:1280px;
+  --maxWidth2:1920px;
+  
+  --fontSizeP: max(18px, min(4vw, 20px));
+
+  --tablet:1200px;
+
 }
 
 *::-webkit-scrollbar {
-  width: .8em;
-  background-color: #fde4cf ;
+  width: 1.5em;
+  background-color: #fafafa ;
 } 
 
 *::-webkit-scrollbar-thumb {
-  background-color: #f4730ab2 ;
+  background-color: var(--mainTextColor);
   height: 300px;
   border-radius: 50px;
 }

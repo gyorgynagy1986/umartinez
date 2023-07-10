@@ -8,7 +8,8 @@ import Image from "next/image";
 import Button from "../UI/Buttons/Button";
 import facebook from "../../../public/assets/social/facebook.svg";
 import instagram from "../../../public/assets/social/instagram.svg";
-import logo_footer from "../../../public/assets/logo/logo_footer.svg";
+import logo_footer from "../../../public/assets/logo/logo.svg";
+import logo from "../../../public/assets/logo/logo.svg";
 import hambiOpen from "../../../public/assets/hambi/hambi_open.svg";
 import hambiClose from "../../../public/assets/hambi/hambi_close.svg";
 import MobileMenu from "../Mobile/MobileMenu";
@@ -21,16 +22,18 @@ const textContentHu = {
 };
 
 const textContentEng = {
-  btnName: "reservation",
+  btnName: "book a table now",
 };
 
 const links = {
-  facebook: "https://www.facebook.com/FUEGOchicken/?locale=hu_HU",
-  instagram: "https://www.instagram.com/fuegobp/?hl=hu",
-  reservation: "https://reservours.com/fuego/tablereservation?s=website",
+  facebook:
+    "https://www.facebook.com/Ultramarinos Martínezchicken/?locale=hu_HU",
+  instagram: "https://www.instagram.com/Ultramarinos Martínezbp/?hl=hu",
+  reservation:
+    "https://reservours.com/Ultramarinos Martínez/tablereservation?s=website",
 };
 
-const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
+const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
   const [mobileMenu, SetMobileMene] = useState(false);
   const pathname = usePathname();
 
@@ -52,22 +55,24 @@ const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
 
   const navClass = `${style.nav} ${nav && style.navNav} ${
     NavFooter && style.footerNav
-  } ${colorMobileMenu && style.colorMobileMenu}`;
+  } ${colorMobileMenu && style.colorMobileMenu} ${
+    stickyPosition && style.stickyContainer
+  }`;
 
   const linkClass = `${NavFooter && style.logoFooterMobile}`;
-  
+
   const containerLogic = `${style.rightItemsContainer} ${
     NavFooter && style.ulCenter
   } ${NavFooter && style.containerUlMobile}`;
-  
+
   const ulLogic = `${style.ul} ${nav && style.ulHide} ${
     NavFooter && style.ulMobile
   }`;
-  
+
   const socialLinkContainerLogic = `${style.social} ${nav && style.socialNav} ${
     NavFooter && style.socialNavFooter
   }`;
-  
+
   const languageLinksLogic = `${style.lng} ${NavFooter && style.lngHide} ${
     nav && style.lngNav
   }`;
@@ -93,28 +98,44 @@ const Navbar = ({ NavFooter, nav, colorMobileMenu }) => {
       <nav className={navClass}>
         {NavFooter && (
           <Link className={linkClass} href="/">
-            <Image alt="Fuego étterem logója" src={logo_footer} />
+            <Image
+              alt="Ultramarinos Martínez étterem logója"
+              src={logo_footer}
+            />
           </Link>
         )}
 
         <div className={containerLogic}>
+          {nav && (
+            <Link href="/">
+              <Image
+                priority
+                className={style.logo}
+                alt="umartinez étterem logója"
+                src={logo}
+              />
+            </Link>
+          )}
           <ul className={ulLogic}>
             <NavItems />
           </ul>
-
           <div className={socialLinkContainerLogic}>
             <Link href={links.facebook}>
-              <Image src={facebook} alt="Fuego facebbok oldala" />
+              <Image
+                src={facebook}
+                alt="Ultramarinos Martínez facebbok oldala"
+              />
             </Link>
             <Link href={links.instagram}>
-              <Image src={instagram} alt="Fuego instagram oldala" />
+              <Image
+                src={instagram}
+                alt="Ultramarinos Martínez instagram oldala"
+              />
             </Link>
           </div>
-
           <div className={languageLinksLogic}>
             <LanguageLinks />
           </div>
-
           <div className={`${nav && style.btnNav}`}>
             <Button
               btnHoverPrefix={btnHoverPrefix === "true" ? true : false}

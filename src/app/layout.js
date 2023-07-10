@@ -1,9 +1,9 @@
 import "./globals.css";
-import { Roboto_Condensed } from "next/font/google";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import Logo from "@/components/UI/Logo/Logo";
+import LogoMain from "@/components/UI/Logo/LogoMain";
 import { Mukta } from "next/font/google";
+import Divider from '@/components/UI/Divider/Divider'
 
 const mukta = Mukta({ subsets: ["latin"], weight: "500" });
 
@@ -17,8 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="hu">
       <body className={mukta.className}>
+        <LogoMain />
         <Navbar nav={true} />
         {children}
+        <Divider />
         <Navbar NavFooter={true} />
         <Footer />
       </body>
