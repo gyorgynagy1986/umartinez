@@ -119,6 +119,18 @@
   display: none;
 }
 
+.imagehover {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .ul li  {
+    pointer-events: none;
+  }
+ }
+
+
+
 
 @media only screen and (max-width: 1250px) {
 
@@ -225,6 +237,7 @@
   .socialNavFooter {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: baseline;
     gap: 3rem;
     margin-bottom: 5rem;
   }
