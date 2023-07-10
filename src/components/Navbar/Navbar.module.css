@@ -50,8 +50,8 @@
   content: "";
   position: absolute;
   bottom: -5px;
-  left: 0;
-  height: 1px;
+  left: 50%; /* Center the starting position */
+  transform: translateX(-50%); /* Move it back by half of its width */  height: 1px;
   width: 0%;
   background-color: var(--navHover);
   transition: all 160ms ease-in-out;

@@ -2,30 +2,36 @@ import React from 'react'
 
 
 const textContent = {
-  day: 'Hétfő - Vasárnap',
-  time: '12:00 - 23:30'
+  day: 'Hétfő - Csütörtök',
+  time: '17:00 - 23:00',
+  day2: 'Péntek - Vasárnap',
+  time2: '12:00 - 23:00'
 }
 
 const textContentEn = {
-  day: 'Monday - Sunday',
-  time: '12:00 - 23:30'
+  day: 'Monday - Thursday',
+  time: '17:00 - 23:00',
+  day2: 'Friday - Sunday',
+  time2: '12:00 - 23:00'
 }
 
 const ContactItems = ({lang}) => {
 
-  const textLangLogic = !lang ? textContent.day : textContentEn.day;
+  const textLangLogic1 = !lang ? textContent.day : textContentEn.day;
   const textLangLogic2 = !lang ? textContent.time : textContentEn.time;
+  const textLangLogic3 = !lang ? textContent.day2 : textContentEn.day2;
+  const textLangLogic4 = !lang ? textContent.time2 : textContentEn.time2;
 
 
   return (
     <>
         <div>
-            <p>{textLangLogic}</p>
+            <p>{textLangLogic1}</p>
             <p>{textLangLogic2}</p>
          </div>
          <div>
-            <p>{textLangLogic}</p>
-            <p>{textLangLogic2}</p>
+            <p>{textLangLogic3}</p>
+            <p>{textLangLogic4}</p>
          </div>
     </>
   )

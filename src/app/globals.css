@@ -32,12 +32,12 @@
 }
 
 *::-webkit-scrollbar {
-  width: .8em;
-  background-color: #fde4cf ;
+  width: 1.5em;
+  background-color: #fafafa ;
 } 
 
 *::-webkit-scrollbar-thumb {
-  background-color:  rgba(163, 105, 40, 1);
+  background-color: var(--mainTextColor);
   height: 300px;
   border-radius: 50px;
 }

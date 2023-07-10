@@ -11,13 +11,10 @@
   font-weight: 700;
 }
 
-.button:hover::before {
-  opacity: 1;
-}
-
 .buttonGetInTouch {
   font-size: 20px;
   line-height: 33.24px;
+  position: relative;
   color: var(--btn2Color);
   background-color: transparent;
   border: none;
@@ -27,18 +24,40 @@
   font-weight: 700;
 }
 
-.buttonGetInTouch:hover {
-  color: var(--titleColor3Hover);
+.buttonGetInTouch::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%; /* Center the starting position */
+  transform: translateX(-50%); /* Move it back by half of its width */
+  height: 2px;
+  width: 0%;
+  background-color: var(--btn2Color);
+  transition: all 200ms ease;
 }
 
+.buttonGetInTouch:hover::after {
+  width: 100%;
+  color: var(--navHover);
+}
+
+
+
 .butnBlue {
-  background: transparent !important;
+  background: transparent;
   padding: 10px 20px;
-  color: rgba(163, 105, 40, 1);
-  border: 2px solid rgba(163, 105, 40, 1);
+  color: var(--btn2Color);
+  border: 2px solid var(--btn2Color);
   line-height: auto;
   border-radius: 2px;
   font-size: 20px;
+  transition: all .2s ease;
+}
+
+.butnBlue:hover {
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  background:var(--btn2Color);;
 }
 
 @media only screen and (max-width: 1200px) {
