@@ -12,9 +12,6 @@ import Link from "next/link";
 import Direction from './../../../../public/assets/icons/directions.svg'
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
-export const metadata = {
-  title: "Contact - Ultramarinos Martínez",
-};
 
 const textContent = {
   h1: "Contact",
