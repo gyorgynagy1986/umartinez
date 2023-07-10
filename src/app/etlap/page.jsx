@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import etlap from "../../../public/assets/menu/1.png";
-import itallap from "../../../public/assets/menu/2.png";
+import etlap from "../../../public/assets/menu/1.jpg";
+import itallap from "../../../public/assets/menu/2.jpg";
 import style from "./page.module.css";
 import { Orelega_One } from "next/font/google";
 
