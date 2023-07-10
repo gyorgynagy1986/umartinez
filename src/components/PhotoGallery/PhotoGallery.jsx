@@ -14,6 +14,15 @@ import photo4 from "../../../public/assets/gallery/photos/Gallery5.webp";
 import photo5 from "../../../public/assets/gallery/photos/Gallery6.webp";
 import photo6 from "../../../public/assets/gallery/photos/Gallery7.webp";
 import photo7 from "../../../public/assets/gallery/photos/Gallery8.webp";
+import photo8 from "../../../public/assets/gallery/photos/Gallery9.webp";
+import photo9 from "../../../public/assets/gallery/photos/Gallery10.webp";
+import photo10 from "../../../public/assets/gallery/photos/Gallery11.webp";
+import photo11 from "../../../public/assets/gallery/photos/Gallery12.webp";
+import photo12 from "../../../public/assets/gallery/photos/Gallery13.webp";
+import photo13 from "../../../public/assets/gallery/photos/Gallery14.webp";
+import photo14 from "../../../public/assets/gallery/photos/Gallery15.webp";
+import photo15 from "../../../public/assets/gallery/photos/Gallery16.webp";
+
 
 import galleryCloseIcon from "../../../public/assets/icons/close.svg";
 
@@ -62,6 +71,46 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
       id: 8,
       title: "Photo 8",
       imageUrl: photo7,
+    },
+    {
+      id: 9,
+      title: "Photo 9",
+      imageUrl: photo8,
+    },
+    {
+      id: 10,
+      title: "Photo 10",
+      imageUrl: photo9,
+    },
+    {
+      id: 11,
+      title: "Photo 11",
+      imageUrl: photo10,
+    },
+    {
+      id: 12,
+      title: "Photo 12",
+      imageUrl: photo11,
+    },
+    {
+      id: 13,
+      title: "Photo 13",
+      imageUrl: photo12,
+    },
+    {
+      id: 14,
+      title: "Photo 14",
+      imageUrl: photo13,
+    },
+    {
+      id: 15,
+      title: "Photo 15",
+      imageUrl: photo14,
+    },
+    {
+      id: 16,
+      title: "Photo 16",
+      imageUrl: photo15,
     },
   ];
 

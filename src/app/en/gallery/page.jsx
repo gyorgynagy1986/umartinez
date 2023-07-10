@@ -25,7 +25,6 @@ const closeGallery = () => {
   setGalleryOpen(false);
 };
 
-
   return (
     <>
       {!galleryOpen && <h1 className={`${style.h1} ${dosis.className}`}>Gallery</h1> }

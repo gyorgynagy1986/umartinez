@@ -16,6 +16,11 @@ import photo8 from "../../../public/assets/gallery/covers/Gallery9.png";
 import photo9 from "../../../public/assets/gallery/covers/Gallery10.png";
 import photo10 from "../../../public/assets/gallery/covers/Gallery11.png";
 import photo11 from "../../../public/assets/gallery/covers/Gallery12.png";
+import photo12 from "../../../public/assets/gallery/covers/Gallery13.png";
+import photo13 from "../../../public/assets/gallery/covers/Gallery14.png";
+import photo14 from "../../../public/assets/gallery/covers/Gallery15.png";
+import photo15 from "../../../public/assets/gallery/covers/Gallery16.png";
+
 
 const photoGalleryCoverPhots = [
   {
@@ -77,6 +82,26 @@ const photoGalleryCoverPhots = [
     id: 12,
     alt: "Ultramarinos Martínez geléria cover photos",
     url: photo11,
+  },
+  {
+    id: 13,
+    alt: "Ultramarinos Martínez geléria cover photos",
+    url: photo12,
+  },
+  {
+    id: 14,
+    alt: "Ultramarinos Martínez geléria cover photos",
+    url: photo13,
+  },
+  {
+    id: 15,
+    alt: "Ultramarinos Martínez geléria cover photos",
+    url: photo14,
+  },
+  {
+    id: 16,
+    alt: "Ultramarinos Martínez geléria cover photos",
+    url: photo15,
   },
 ];
 
