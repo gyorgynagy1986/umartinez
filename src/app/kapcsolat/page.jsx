@@ -1,11 +1,13 @@
+"use client"
+
 import style from "./page.module.css";
 import Image from "next/image";
 import Button from "@/components/UI/Buttons/Button";
 import ButtonGetInTouch from "@/components/UI/Buttons/ButtonGetInTouch";
-import mapPhoto from "../../../public/assets/sections/map_contact.png";
+import mapPhoto from "../../../public/assets/sections/map_contact.webp";
 import facebook from "../../../public/assets/social/facebook.svg";
 import instagram from "../../../public/assets/social/instagram.svg";
-import Direction from './../../../public/assets/icons/directions.svg'
+import Direction from "./../../../public/assets/icons/directions.svg";
 import Link from "next/link";
 import { Orelega_One } from "next/font/google";
 
@@ -17,20 +19,25 @@ const textContent = {
   btn: "asztalfoglalás",
   btn2: "kapcsolat",
   facebook:
-    "https://www.facebook.com/Ultramarinos Martínezchicken/?locale=hu_HU",
-  instagram: "https://www.instagram.com/Ultramarinos Martínezbp/?hl=hu",
+    "https://www.facebook.com/ultramarinosbp/",
+  instagram: "https://www.instagram.com/ultramarinosbp/",
   reservation:
-    "https://reservours.com/Ultramarinos Martínez/tablereservation?s=website",
+    "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
 };
 
 const Contact = () => {
+  const handleClickMap = () => {
+    window.location.href = "https://goo.gl/maps/dhNWT2SNQjV4JENh8";
+  };
+
   return (
     <>
       <h1 className={`${style.h1} ${dosis.className}`}>{textContent.h1}</h1>
       <div className={style.container}>
         <div className={style.imageContainer}>
-          <div className={style.layer}></div>
           <Image
+            onClick={handleClickMap}
+            className={style.imagehover}
             placeholder="blur"
             priority
             alt="Ultramarinos Martínez"
@@ -44,7 +51,9 @@ const Contact = () => {
               <p className={style.contactText}>
                 1075 Budapest, Kazinczy utca 3b.
               </p>
-              <Link href='/' ><Image alt='direction' src={Direction} /></Link> 
+              <Link href="https://goo.gl/maps/dhNWT2SNQjV4JENh8">
+                <Image alt="direction" src={Direction} />
+              </Link>
             </div>
 
             <p className={style.contactText}>+ 36 30 317 69 65</p>
@@ -54,14 +63,14 @@ const Contact = () => {
           <div className={style.btnContainer}>
             <div className={style.socialContainerItem}>
               <Image
-                alt="Ultramarinos Martínez étterem facebbok oldala"
+                alt="Ultramarinos Martínez étterem facebook oldala"
                 src={facebook}
               />
               <ButtonGetInTouch url={textContent.facebook} name={"facebook"} />
             </div>
             <div className={style.socialContainerItem}>
               <Image
-                alt="Ultramarinos Martínez étterem isntagram oldala"
+                alt="Ultramarinos Martínez étterem instagram oldala"
                 src={instagram}
               />
               <ButtonGetInTouch

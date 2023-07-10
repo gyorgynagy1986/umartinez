@@ -92,6 +92,10 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .container {
+   margin-top: 2rem;
+  }
+ 
   .containerTextleft {
     padding-left: 4rem;
     padding-right: 4rem;

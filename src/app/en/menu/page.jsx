@@ -26,7 +26,7 @@ const Menu = () => {
           onClick={handleClickFood}
           placeholder="blur"
           priority
-          alt="Ultramarinos Martínez étterem itallapja"
+          alt="Drink menu of Ultramarinos Martínez restaurant"
           src={itallap}
         />
         <Image
@@ -34,7 +34,7 @@ const Menu = () => {
           onClick={handleClickDrinks}
           placeholder="blur"
           priority
-          alt="Ultramarinos Martínez étterem Étlapja"
+          alt="Ultramarinos Martínez Restaurant Menu"
           src={etlap}
         />
       </div>
