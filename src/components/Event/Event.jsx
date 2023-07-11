@@ -7,14 +7,14 @@ const font = Orelega_One({ subsets: ["latin"], weight: '400' });
 
 const textContent = {
   h2: "Szeretnél rendezvényt tartani az Ultramarinos Martínezben?",
-  p: "Keress bátran telefonon, vagy írj nekünk, ha szeretnél rendezvényt tartani nálunk!",
+  p: "Keress minket bátran telefonon, vagy írj nekünk, ha szeretnél rendezvényt tartani nálunk!",
   btn: "kapcsolat",
   url: "/kapcsolat",
 };
 
 const textContentEn = {
   h2: "Want to have an event at Ultramarinos Martínez?",
-  p: "Feel free to give us a call or drop us a message if you're interested in hosting an event!",
+  p: "Give us a call or drop us a message if you're interested in hosting an event!",
   btn: "Get in touch",
   url: "/en/contact",
 };
