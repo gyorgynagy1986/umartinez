@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import style from "./page.module.css";
 import Image from "next/image";
@@ -18,8 +18,7 @@ const textContent = {
   h3: "Ultramarinos Martínez",
   btn: "asztalfoglalás",
   btn2: "kapcsolat",
-  facebook:
-    "https://www.facebook.com/ultramarinosbp/",
+  facebook: "https://www.facebook.com/ultramarinosbp/",
   instagram: "https://www.instagram.com/ultramarinosbp/",
   reservation:
     "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
@@ -49,7 +48,7 @@ const Contact = () => {
             <h2 className={dosis.className}>{textContent.h3}</h2>
             <div className={style.addresscontainer}>
               <p className={style.contactText}>
-                1111 Budapest, Bartók Béla út 16. 
+                1111 Budapest, Bartók Béla út 16.
               </p>
               <Link href="https://goo.gl/maps/dhNWT2SNQjV4JENh8">
                 <Image alt="direction" src={Direction} />
