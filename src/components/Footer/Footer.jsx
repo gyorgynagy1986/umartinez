@@ -20,7 +20,7 @@ const Footer = () => {
     <footer className={style.container}>
       <div className={style.containerTextleft}>
         <p className={style.containerTextleftCookieMobile}>Cookie policy</p>
-       <Link href='/' ><h2 className={`${style.h2} ${bebas.className}`}>GRUPO 10</h2></Link> 
+       <Link href='/' ><h2 className={`${style.h2} ${bebas.className}`}>GRUPO10</h2></Link> 
         <div className={style.containerTextP}>
           <p className={style.containerTextleftP}></p>
         </div>

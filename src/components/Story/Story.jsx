@@ -14,7 +14,7 @@ const textContent = {
   p: "2023-ban nyitottuk meg Budapest első spanyol colmadoját a Bartók Béla úton, a Szent Gellért tér közvetlen közelében, és azóta rendületlenül igyekszünk megnyerni minden hozzánk betérő vendég szívét.",
   p1: "Bárunkban érlelt sonkák, ínycsiklanydozó sajtok, olívabogyók, pinchók, vermutok és egyéb finomságok várnak. Boltunk polcain pedig többek között izgalmas krémek és szószok, kiváló minőségű halkonzervek, borok, cavak és sörök sorakoznak, amelyek közvetlenül Spanyolországból érkeznek.",
   p2: "Ráadásul mindent, ami a boltban megtalálható, helyben elfogyaszthatod, de akár haza is viheted!",
-  btn: "Étlap",
+  btn: "Étlapunk",
   url: "/etlap",
 };
 
