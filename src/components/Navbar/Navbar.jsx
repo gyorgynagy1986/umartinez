@@ -103,7 +103,7 @@ const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
             <Link href="/">
               <Image
                 priority
-                className={style.logo}
+                className={` ${stickyPosition && style.stickylogo} ${style.logo}`}
                 alt="umartinez étterem logója"
                 src={logo}
               />
