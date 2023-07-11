@@ -8,6 +8,7 @@ import ButtonGetInTouch from "../UI/Buttons/ButtonGetInTouch";
 import Image from "next/image";
 import ContactItems from "./ContactItems";
 import mapPhoto from "../../../public/assets/sections/map_contact.webp";
+import { links } from '../../app/links'
 
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 

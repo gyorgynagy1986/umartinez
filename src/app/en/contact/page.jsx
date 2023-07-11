@@ -11,16 +11,13 @@ import { Orelega_One } from "next/font/google";
 import Link from "next/link";
 import Direction from "./../../../../public/assets/icons/directions.svg";
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
+import { links } from '../links'
 
 const textContent = {
   h1: "Contact",
   h3: "Ultramarinos Martínez",
   btn: "book a table now",
-  btn2: "Contact",
-  facebook: "https://www.facebook.com/ultramarinosbp/",
-  instagram: "https://www.instagram.com/ultramarinosbp/",
-  reservation:
-    "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
+  btn2: "Contact"
 };
 
 const Contact = () => {
@@ -64,7 +61,7 @@ const Contact = () => {
                 alt="Facebook page of Ultramarinos Martínez restaurant"
                 src={facebook}
               />
-              <ButtonGetInTouch url={textContent.facebook} name={"facebook"} />
+              <ButtonGetInTouch url={links.facebook} name={"facebook"} />
             </div>
             <div className={style.socialContainerItem}>
               <Image
@@ -72,14 +69,14 @@ const Contact = () => {
                 src={instagram}
               />
               <ButtonGetInTouch
-                url={textContent.instagram}
+                url={links.instagram}
                 name={"instagram"}
               />
             </div>
             <div className={style.btnContainerItem}>
               <Button
                 btnBlue={true}
-                url={textContent.reservation}
+                url={links.reservation}
                 name={"book a table now"}
               />
             </div>
