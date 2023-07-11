@@ -11,7 +11,7 @@ import { Orelega_One } from "next/font/google";
 import Link from "next/link";
 import Direction from "./../../../../public/assets/icons/directions.svg";
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
-import { links } from '../links'
+import { links } from '../../links'
 
 const textContent = {
   h1: "Contact",
