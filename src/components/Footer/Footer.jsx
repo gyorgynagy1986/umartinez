@@ -24,15 +24,15 @@ const Footer = () => {
         <div className={style.containerTextP}>
           <p className={style.containerTextleftP}></p>
         </div>
-        <Link className={style.learnMore} href="https://www.grupo10.hu/">Learn more about Grupo 10</Link>
+        <Link className={style.learnMore} href="https://www.grupo10.hu/">Learn more about Grupo10</Link>
         <div className={style.containerCookie}>
           <div className={style.containerTextleftReserved}>
             {" "}
             <p>
               {" "}
-              All rights reserved <span>©</span>
+              All rights reserved<span>©</span>
             </p>
-            <p>Grupo10.hu</p> <p className={style.mobileTurn}>|</p> <p>2023</p>
+            <p>Grupo10.hu</p><p className={style.mobileTurn}>|</p><p>2023</p>
           </div>
           <p className={style.containerTextleftCookie}>Cookie policy</p>
         </div>
