@@ -9,18 +9,18 @@ const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
 const textContent = {
   h2: "Szolgáltatások ",
-  p: "Foglalj asztalt nálunk, ha céges rendezvényt szervezel, ünnepelnél a barátaiddal, vagy egyszerűen csak élveznéd a Bartók hangulatát egy sangría társaságában. Igazi spanyol életérzéssel várunk!",
+  p: "Foglalj asztalt nálunk, ha céges rendezvényt szervezel, ünnepelnél a barátaiddal, vagy egyszerűen csak élveznéd a Bartók hangulatát egy frissítő sangría társaságában. Igazi spanyol életérzéssel várunk!",
   p1: "Céges rendezvények",
-  p2: "baráti összejövetelek",
-  p3: "születésnapok",
+  p2: "Baráti összejövetelek",
+  p3: "Születésnapok",
 };
 
 const textContentEn = {
   h2: "Services ",
-  p: "Book a table with us if you're organizing a company event, celebrating with friends, or simply looking to enjoy the ambience of Bartók with a glass of sangría. We are waiting for you with authentic Spanish vibes!",
+  p: "Book a table with us if you're organizing a company event, celebrating with friends or simply looking to enjoy the ambience of Bartók with a glass of refreshing sangría. We are waiting for you with authentic Spanish vibes!",
   p1: "Corporate events",
-  p2: "get-togethers",
-  p3: "birthday celebrations",
+  p2: "Get-togethers",
+  p3: "Birthday celebrations",
 };
 
 const Services = ({ lang }) => {

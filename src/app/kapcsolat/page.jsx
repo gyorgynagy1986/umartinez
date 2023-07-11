@@ -49,15 +49,15 @@ const Contact = () => {
             <h2 className={dosis.className}>{textContent.h3}</h2>
             <div className={style.addresscontainer}>
               <p className={style.contactText}>
-                1075 Budapest, Kazinczy utca 3b.
+                1111 Budapest, Bartók Béla út 16. 
               </p>
               <Link href="https://goo.gl/maps/dhNWT2SNQjV4JENh8">
                 <Image alt="direction" src={Direction} />
               </Link>
             </div>
 
-            <p className={style.contactText}>+ 36 30 317 69 65</p>
-            <p className={style.contactText}>hello@umartinez.hu</p>
+            <p className={style.contactText}>+36 20 476 6558</p>
+            <p className={style.contactText}>hola@umartinez.hu</p>
           </div>
 
           <div className={style.btnContainer}>
