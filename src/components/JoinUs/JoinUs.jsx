@@ -21,7 +21,7 @@ const textContentEn = {
 
 const text = (
   <p className={style.h2}>
-    Küldd el az önéletrajzod a <span>hola@umartinez.hu</span>  e-mail címre, és hamarosan keresni fogunk!
+    Küldd el az önéletrajzod az <span>hola@umartinez.hu</span>  e-mail címre, és hamarosan keresni fogunk!
   </p>
 );
 const textEn = (
