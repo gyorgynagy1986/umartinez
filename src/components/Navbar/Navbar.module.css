@@ -99,6 +99,8 @@
   color: var(--navTextColor);
   cursor: pointer;
   font-weight: 800;
+  position: relative ;
+
 }
 
 .hambi {
@@ -109,6 +111,25 @@
   color: var(--titleColor3Hover) !important;
   cursor: default !important;
   font-weight: 500 !important;
+  pointer-events: none;
+  
+}
+
+
+.lng span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the starting position */
+  transform: translateX(-50%); /* Move it back by half of its width */  height: 1px;
+  width: 0%;
+  background-color: var(--navHover);
+  transition: all 160ms ease-in-out;
+}
+
+.lng span:hover::after {
+  width: 100%;
+  color: var(--navHover);
 }
 
 .logo {

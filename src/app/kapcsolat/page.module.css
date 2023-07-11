@@ -26,6 +26,8 @@
   display: flex;
   flex-direction: column;
   padding-left: 8.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .imageContainer {
@@ -211,7 +213,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
   }
 
   .imageContainer {
