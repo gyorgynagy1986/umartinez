@@ -10,6 +10,7 @@ import instagram from "../../../public/assets/social/instagram.svg";
 import Direction from "./../../../public/assets/icons/directions.svg";
 import Link from "next/link";
 import { Orelega_One } from "next/font/google";
+import { links } from '../links'
 
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
@@ -18,10 +19,6 @@ const textContent = {
   h3: "Ultramarinos Martínez",
   btn: "asztalfoglalás",
   btn2: "kapcsolat",
-  facebook: "https://www.facebook.com/ultramarinosbp/",
-  instagram: "https://www.instagram.com/ultramarinosbp/",
-  reservation:
-    "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
 };
 
 const Contact = () => {
@@ -65,7 +62,7 @@ const Contact = () => {
                 alt="Ultramarinos Martínez étterem facebook oldala"
                 src={facebook}
               />
-              <ButtonGetInTouch url={textContent.facebook} name={"facebook"} />
+              <ButtonGetInTouch url={links.facebook} name={"facebook"} />
             </div>
             <div className={style.socialContainerItem}>
               <Image
@@ -73,14 +70,14 @@ const Contact = () => {
                 src={instagram}
               />
               <ButtonGetInTouch
-                url={textContent.instagram}
+                url={links.instagram}
                 name={"instagram"}
               />
             </div>
             <div className={style.btnContainerItem}>
               <Button
                 btnBlue={true}
-                url={textContent.reservation}
+                url={links.reservation}
                 name={"asztalfoglalás"}
               />
             </div>

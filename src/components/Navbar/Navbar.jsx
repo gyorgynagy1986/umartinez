@@ -16,6 +16,7 @@ import MobileMenu from "../Mobile/MobileMenu";
 import NavItems from "./NavItems";
 import LanguageLinks from "./LanguageLinks";
 import { usePathname } from "next/navigation";
+import { links } from '../../app/links'
 
 const textContentHu = {
   btnName: "asztalfoglalás",
@@ -23,14 +24,6 @@ const textContentHu = {
 
 const textContentEng = {
   btnName: "book a table now",
-};
-
-const links = {
-  facebook:
-    "https://www.facebook.com/ultramarinosbp/",
-  instagram: "https://www.instagram.com/ultramarinosbp/",
-  reservation:
-    "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
 };
 
 const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {

@@ -22,6 +22,9 @@ import photo12 from "../../../public/assets/gallery/photos/Gallery13.webp";
 import photo13 from "../../../public/assets/gallery/photos/Gallery14.webp";
 import photo14 from "../../../public/assets/gallery/photos/Gallery15.webp";
 import photo15 from "../../../public/assets/gallery/photos/Gallery16.webp";
+import photo16 from "../../../public/assets/gallery/photos/Gallery17.webp";
+import photo17 from "../../../public/assets/gallery/photos/Gallery18.webp";
+
 
 
 import galleryCloseIcon from "../../../public/assets/icons/close.svg";
@@ -111,6 +114,16 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
       id: 16,
       title: "Photo 16",
       imageUrl: photo15,
+    },
+    {
+      id: 17,
+      title: "Photo 17",
+      imageUrl: photo16,
+    },
+    {
+      id: 18,
+      title: "Photo 18",
+      imageUrl: photo17,
     },
   ];
 

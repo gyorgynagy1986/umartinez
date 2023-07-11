@@ -7,17 +7,10 @@ import MobileMenuItem from './MobileMenuItem'
 import Button from '../UI/Buttons/Button'
 import { usePathname } from 'next/navigation';
 import LanguageLinks from '../../components/Navbar/LanguageLinks'
+import { links } from '../../app/links.js'
 
 import facebook from '../../../public/assets/social/facebook.svg'
 import instagram from '../../../public/assets/social/instagram.svg'
-
-const links = {
-  facebook:
-    "https://www.instagram.com/ultramarinosbp/",
-  instagram: "https://www.instagram.com/ultramarinosbp/",
-  reservation:
-    "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
-};
 
 const textContentHu = {
   btnName:'asztalfoglalás',
