@@ -56,7 +56,7 @@
 
 /* TABLET max-width: 1200px */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1150px) {
   .container {
     background-image: none;
     height: 100%;
@@ -67,8 +67,8 @@
   }
 
   .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .imageContainer img {

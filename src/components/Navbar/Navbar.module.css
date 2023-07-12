@@ -163,14 +163,14 @@
   }
 
   .nav {
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 8.5rem;
+    padding-left: 8.5rem;
     justify-content: flex-end;
   }
 
   .logo {
     display: block;
-    left: 4rem;
+    left: 8.5rem;
     top: 4px;
     width: 90px;
   }
@@ -213,6 +213,25 @@
     line-height: 21px;
     color: var(--navTextColor);
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .nav {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    justify-content: flex-end;
+  }
+
+  .logo {
+    display: block;
+    left: 4rem;
+    top: 4px;
+    width: 90px;
+  }
+
+  .stickylogo {
+    top: -5px;
   }
 }
 
