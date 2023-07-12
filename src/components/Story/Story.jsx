@@ -21,7 +21,7 @@ const textContent = {
 const textContentEn = {
   h4: "About us",
   p: 'We opened the very first spanish colmado of Budapest on Bartók Béla Street, in the immediate vicinity of St. Gellért Square in 2023, and since then we have been tirelessly striving to win the hearts of every guest who enters our doors.',
-  p1: "Our bar offers cured hams, mouth-watering cheeses, olives, pinchos, vermouths and other delicacies. On the shelves of our store you will find exciting creams and sauces, excellent quality canned fish, wines, cavas and beers, all coming directly from Spain.",
+  p1: "On the shelves of our store you will find exciting creams and sauces, excellent quality canned fish, wines, cavas and beers, among others, all coming directly from Spain.",
   p2: "And what is the best part? Everything you find in the store can be enjoyed on site or even taken home with you!",
   btn: "See the Menu",
   url: "/en/menu",
