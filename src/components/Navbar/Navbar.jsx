@@ -46,7 +46,7 @@ const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
     }
   }, [mobileMenu]);
 
-  const navClass = `${style.nav} ${nav && style.navNav} ${
+  const navClass = `${style.nav} ${nav && style.navNav} ${nav && style.navSizePrefix} ${
     NavFooter && style.footerNav
   } ${colorMobileMenu && style.colorMobileMenu} ${
     stickyPosition && style.stickyContainer
@@ -59,8 +59,7 @@ const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
   } ${NavFooter && style.containerUlMobile}`;
 
   const ulLogic = `${style.ul} ${nav && style.ulHide} ${
-    NavFooter && style.ulMobile
-  }`;
+    NavFooter && style.ulMobile}  ${stickyPosition && style.ulPrefixSticky} }`;
 
   const socialLinkContainerLogic = `${style.social} ${nav && style.socialNav} ${
     NavFooter && style.socialNavFooter
