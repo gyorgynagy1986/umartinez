@@ -57,7 +57,7 @@ const itemsEng = [
   }, 
   {
     id:5,
-    name: 'Opening Horus', 
+    name: 'Opening Hours', 
     url: 'en/#opening',
 }, 
 ]
