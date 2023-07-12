@@ -67,7 +67,8 @@
 
 /* TABLET max-width: 1200px */
 
-@media only screen and (max-width: 1200px) {
+
+@media only screen and (max-width: 1150px) {
   .prefixContainer {
     width: unset;
     max-width: unset;

@@ -10,6 +10,7 @@
   height: 90px;
 }
 
+
 @media only screen and (max-width: 1200px) {
   .logo {
     left: 4rem;

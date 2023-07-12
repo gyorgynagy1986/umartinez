@@ -83,7 +83,7 @@
   letter-spacing: 0em;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1150px) {
   .container {
     background-image: none;
     height: 100%;
