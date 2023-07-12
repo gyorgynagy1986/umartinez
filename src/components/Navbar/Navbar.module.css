@@ -144,19 +144,33 @@
   pointer-events: none;
 }
 
-@media only screen and (max-width: 1100px) {
-  .ul li:hover::after {
-    width:0%;
-   
-  }
- }
-
 
 @media only screen and (max-width: 1250px) {
+
+  .lngHide {
+    display: none;
+  }
+
+  }
+
+
+@media only screen and (max-width: 1200px) {
+
+  .ulPrefixSticky li {
+    margin-right: 3rem !important;
+   }
+
+  }
+
+
+
+
+@media only screen and (max-width: 1150px) {
 
   .ulHide {
     display: none;
   }
+
 
   .ulCenter {
     width: 100%;
@@ -179,7 +193,6 @@
     top: -5px;
   }
 
-
   .logoIntabletFotterDisplayNone {
     display: none;
   }
@@ -189,10 +202,6 @@
     justify-content: space-evenly !important;
     flex-direction: column;
     align-items: center;
-  }
-
-  .lngHide {
-    display: none;
   }
 
   .hambi {
@@ -235,6 +244,13 @@
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .ul li:hover::after {
+    width:0%;
+   
+  }
+ }
+
 @media only screen and (max-width: 681px) {
   .nav {
     padding-right: 2rem;
@@ -266,7 +282,7 @@
 
 /*FOOTER NAV IN MOBILE VIEW WHICH IS ALSO THE NAV OF THE MOBILE MENU*/
 
-@media only screen and (max-width:1250px) {
+@media only screen and (max-width:1200px) {
   .colorMobileMenu {
     background-color: var(--bgColor);
   }
