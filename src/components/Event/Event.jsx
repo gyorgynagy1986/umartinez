@@ -16,7 +16,7 @@ const textContent = {
 
 const textContentEn = {
   h2: "Want to have an event at",
-  h2n: "Ultramarinos Martínezben?",
+  h2n: "Ultramarinos Martínez?",
   p: "Give us a call or drop us a message if you're interested in hosting an event!",
   btn: "Get in touch",
   url: "/en/contact",
