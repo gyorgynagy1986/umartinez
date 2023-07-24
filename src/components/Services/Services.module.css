@@ -52,6 +52,11 @@
   line-height: 30px;
 }
 
+.upper {
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
 .ulContainer {
   padding-left: 4rem;
   margin-bottom: 3rem;
