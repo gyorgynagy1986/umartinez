@@ -52,7 +52,6 @@ const Services = ({ lang }) => {
             <li>{liLogic3}</li>
           </ul>
           <p>{pLgoic}</p>
-          <br/>
           <p className={style.upper}>{pLgoic2}</p>
         </div>
       </div>
