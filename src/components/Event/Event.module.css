@@ -51,6 +51,10 @@
   text-align: center;
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
 .containerText p {
   text-align: center;
   font-size: var(--fontSizeP);

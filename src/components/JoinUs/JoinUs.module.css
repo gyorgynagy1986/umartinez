@@ -15,8 +15,7 @@
 
 .containerText {
   width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +47,7 @@
 
 .containerText p {
   font-weight: 400;
-  font-size: var(--fontSizeP);
+  font-size: max(16px, min(3vw, 18px));
   line-height: 150%;
   text-align: center;
   margin-bottom: 3rem;
