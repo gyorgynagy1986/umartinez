@@ -32,7 +32,7 @@ const Footer = () => {
               {" "}
               All rights reserved<span>©</span>
             </p>
-            <p>Grupo10.hu</p><p className={style.mobileTurn}>|</p><p>2023</p>
+            <p>Grupo10.hu</p><p className={style.mobileTurn}>|</p><p>2023</p><p className={style.stdbromo}> <Link href="https://studiobromo.hu/">Designed and developed by Studiobromo</Link></p>
           </div>
           <p className={style.containerTextleftCookie}>Cookie policy</p>
         </div>
