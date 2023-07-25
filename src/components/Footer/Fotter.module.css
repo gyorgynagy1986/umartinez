@@ -70,7 +70,6 @@
   font-size: 14px;
   line-height: 150%;
   /* or 21px */
-  margin-top: 21.5px;
 }
 
 .learnMore {
@@ -78,10 +77,12 @@
   font-size: 16px !important;
   line-height: auto;
   color: rgba(163, 105, 40, 1);
+  display: contents;
 }
 
 .learnMore:hover {
   color: black;
+
 }
 
 .containerCookie {
@@ -89,6 +90,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.stdbromo {
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -102,9 +107,9 @@
   }
 }
 
-@media only screen and (max-width: 681px) {
+@media only screen and (max-width: 1000px) {
   .container {
-    min-height: 33.8rem;
+    min-height: 36.8rem;
     height: 100%;
     display: flex;
     align-items: center;
