@@ -7,9 +7,9 @@ import StickyNav from "../StickyNav/StickyNav";
 import Button from "../UI/Buttons/Button";
 import Image from "next/image";
 import ButtonGetInTouch from "../UI/Buttons/ButtonGetInTouch";
-import HeroCoverPhoto from "../../../public/assets/hero/hero.png";
+import HeroCoverPhoto from "../../../public/assets/hero/hero.webp";
 
-const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
+const orelega = Orelega_One({ subsets: ["latin"], weight: "400" });
 
 
 const textContent = {
@@ -60,7 +60,7 @@ const Hero = ({ reservation, lang }) => {
         />
       </div>
       <div className={style.textContainer}>
-        <h1 className={dosis.className}>
+        <h1 className={orelega.className}>
           {!lang ? textContent.h1 : textContentEn.h1}
         </h1>
         <p>{!lang ? textContent.p : textContentEn.p}</p>
