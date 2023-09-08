@@ -5,7 +5,7 @@ import { Orelega_One } from "next/font/google";
 import Button from "../UI/Buttons/Button";
 import Image from "next/image";
 
-import ourStoryCoverPhoto from "../../../public/assets/sections/Our_story.png";
+import ourStoryCoverPhoto from "../../../public/assets/sections/our_story.webp";
 
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 

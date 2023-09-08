@@ -13,13 +13,13 @@ const Footer = () => {
       <div className={style.containerTextleft}>
         <p className={style.containerTextleftCookieMobile}>Cookie policy</p>
         <Link href="/">
-          <h2 className={`${style.h2} ${bebas.className}`}>GRUPO10</h2>
+          <h2 className={`${style.h2} ${bebas.className}`}>GRUPO 10</h2>
         </Link>
         <div className={style.containerTextP}>
           <p className={style.containerTextleftP}></p>
         </div>
         <Link className={style.learnMore} href="https://www.grupo10.hu/">
-          Learn more about Grupo10
+          Learn more about GRUPO 10
         </Link>
         <div className={style.containerCookie}>
           <div className={style.containerTextleftReserved}>
