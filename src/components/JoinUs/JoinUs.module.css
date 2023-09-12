@@ -38,7 +38,7 @@
   text-align: center;
 }
 
-.containerText span {
+.email {
   color: rgba(163, 105, 40, 1);
   font-weight: 700;
   text-decoration: underline;
