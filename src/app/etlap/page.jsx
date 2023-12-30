@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import etlap from "../../../public/assets/menu/1.jpg";
+import etlap_es from "../../../public/assets/menu/3_es.jpg";
+
 import itallap from "../../../public/assets/menu/2.jpg";
 import style from "./page.module.css";
 import { Orelega_One } from "next/font/google";
@@ -15,6 +17,10 @@ const Menu = () => {
 
   const handleClickDrinks = () => {
     window.location.href = "/itallap.pdf";
+  };
+
+  const handleClickSpanish = () => {
+    window.location.href = "/menu_es.pdf";
   };
 
   return (
@@ -36,6 +42,14 @@ const Menu = () => {
           priority
           alt="Ultramarinos Martínez étterem Étlapja"
           src={etlap}
+        />
+         <Image
+          style={{ cursor: "pointer" }}
+          onClick={handleClickSpanish}
+          placeholder="blur"
+          priority
+          alt="Ultramarinos Martínez étterem Étlapja"
+          src={etlap_es}
         />
       </div>
     </>
