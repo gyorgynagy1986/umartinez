@@ -11,18 +11,18 @@ const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
 const textContent = {
   h4: "Rólunk",
-  p: "2023-ban nyitottuk meg Budapest első spanyol colmadoját a Bartók Béla úton, a Szent Gellért tér közvetlen közelében, és azóta rendületlenül igyekszünk megnyerni minden hozzánk betérő vendég szívét.",
-  p1: "Bárunkban érlelt sonkák, ínycsiklanydozó sajtok, olívabogyók, pinchók, vermutok és egyéb finomságok várnak. Boltunk polcain pedig többek között izgalmas krémek és szószok, kiváló minőségű halkonzervek, borok, cavak és sörök sorakoznak, amelyek közvetlenül Spanyolországból érkeznek.",
-  p2: "Ráadásul mindent, ami a boltban megtalálható, helyben elfogyaszthatod, de akár haza is viheted!",
+  p: "Mióta megnyitottuk Budapest első spanyol colmadoját a Bartókon, a Szent Gellért tér közvetlen közelében, igyekszünk megnyerni minden hozzánk betérő vendég szívét.",
+  p1: "Bárunkban érlelt sonkák, ínycsiklandozó sajtok, olívabogyók és más kulináris finomságok várnak. Boltunk polcain pedig többek között különleges krémek és szószok, kiváló minőségű halkonzervek, borok, sörök és cavák sorakoznak, melyek mind Spanyolországból érkeznek.",
+  p2: "Ráadásul mindent, amit a boltban találsz, helyben is elfogyaszthatod, vagy akár haza is viheted!",
   btn: "Étlapunk",
   url: "/etlap",
 };
 
 const textContentEn = {
   h4: "About us",
-  p: 'We opened the very first spanish colmado of Budapest on Bartók Béla Street, in the immediate vicinity of St. Gellért Square in 2023, and since then we have been tirelessly striving to win the hearts of every guest who enters our doors.',
-  p1: "Our bar offers cured hams, mouth-watering cheeses, olives, pinchos, vermouths and other delicacies. On the shelves of our store you will find exciting creams and sauces, excellent quality canned fish, wines, cavas and beers, among others, all coming directly from Spain.",
-  p2: "And what is the best part? Everything you find in the store can be enjoyed on site or even taken home with you!",
+  p: 'Since we opened Budapest’s first Spanish colmado on Bartók Béla Street, next to St. Gellért Square, our mission has been to win the hearts of every guest who walks through our doors. ',
+  p1: "Within our bar, you’ll find cured hams, delectable cheeses, olives, and a variety of culinary delights. On the shelves of our store, you'll discover special creams and sauces, high-quality canned fish, wines, beers, cavas, and many more, all sourced directly from Spain.",
+  p2: "And the best part is that everything you find in the store can be enjoyed on-site or even taken home with you!",
   btn: "See the Menu",
   url: "/en/menu",
 };
