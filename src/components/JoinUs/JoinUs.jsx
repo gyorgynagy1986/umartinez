@@ -28,7 +28,7 @@ const text = (
 const textEn = (
   <p className={style.h2}>
     Send us your CV to{" "}
-    <a href="mailto:hola@umartinez.hu" className={style.email}>hola@umartinez.hu</a>{" "}and we’ll get back to you soon!
+    <a href="mailto:hola@umartinez.hu" className={style.email}>hola@umartinez.hu</a>,{" "}and we’ll get back to you soon!
   </p>
 );
 
