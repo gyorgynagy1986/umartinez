@@ -6,10 +6,10 @@ import { Orelega_One } from "next/font/google";
 const font = Orelega_One({ subsets: ["latin"], weight: '400' });
 
 const textContent = {
-  h2: "Szeretnél rendezvényt tartani az",
+  h2: "Szeretnél rendezvényt az",
   h2n: "Ultramarinos Martínezben?",
 
-  p: "Keress minket bátran telefonon, vagy írj nekünk, ha szeretnél rendezvényt tartani nálunk!",
+  p: "Keress bátran telefonon, vagy írj üzenetet, ha szeretnél rendezvényt nálunk!",
   btn: "kapcsolat",
   url: "/kapcsolat",
 };

@@ -13,7 +13,7 @@ const orelega = Orelega_One({ subsets: ["latin"], weight: "400" });
 
 
 const textContent = {
-  h1: "Ultramarinos Martínez",
+  h1: "Ultramarinos Martínez Deli & Bar",
   p: "Deli és bár, bár és deli, spanyol ízek helyben és elvitelre is. Gyere és kóstold meg finomságainkat, kedvenceidet pedig vidd haza!",
   btn: "asztalfoglalás",
   btn2: "kapcsolat",
@@ -21,7 +21,7 @@ const textContent = {
 };
 
 const textContentEn = {
-  h1: "Ultramarinos Martínez",
+  h1: "Ultramarinos Martínez Deli & Bar",
   p: "Deli and bar, bar and deli, Spanish flavors on site and for takeaway. Come and taste our delicacies, and take your favorites home!",
   btn: "BOOK a table now",
   btn2: "Get in touch",
