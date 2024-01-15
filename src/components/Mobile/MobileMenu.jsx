@@ -14,10 +14,14 @@ import instagram from '../../../public/assets/social/instagram.svg'
 
 const textContentHu = {
   btnName:'asztalfoglalás',
+  btnNameWolt:'Rendelés',
+
 }
 
 const textContentEng = {
-btnName:'reservation',
+  btnName:'reservation',
+  btnNameWolt:'Order',
+
 }
 
 const MobileMenu = ({mobileClose}) => {
@@ -37,7 +41,11 @@ const MobileMenu = ({mobileClose}) => {
             <Link href={links.facebook}><Image src={facebook} /></Link>
             <Link href={links.instagram}><Image src={instagram} /></Link>
         </div>
-        <Button url={links.reservation} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName } />
+        <div className={style.mobileMenuBtnContainer}>
+          <Button url={links.reservation} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnName : textContentHu.btnName } />
+          <Button url={links.wolt} name={pathname === '/en' || pathname === '/en/menu' || pathname === '/en/contact' ||  pathname === '/en/gallery' ? textContentEng.btnNameWolt : textContentHu.btnNameWolt } />
+        </div>
+
       </div>
     </div>
   </>
