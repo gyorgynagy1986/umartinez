@@ -79,6 +79,10 @@ const Contact = () => {
                 url={links.reservation}
                 name={"book a table now"}
               />
+                <ButtonGetInTouch
+                url={links.wolt}
+                name={"Order"}
+              />
             </div>
           </div>
         </div>
