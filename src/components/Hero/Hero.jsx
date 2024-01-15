@@ -22,7 +22,7 @@ const textContent = {
 
 const textContentEn = {
   h1: "Ultramarinos Martínez Deli & Bar",
-  p: "Deli and bar, bar and deli, Spanish flavors on site and for takeaway. Come and taste our delicacies, and take your favorites home!",
+  p: "Deli and bar, bar and deli, Spanish flavors on site and for takeaway. Come and taste our delicacies, and take your favourites home!",
   btn: "BOOK a table now",
   btn2: "Get in touch",
   url: "/en/contact",

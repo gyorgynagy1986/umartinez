@@ -9,7 +9,7 @@ const textContent = {
   h2: "Szeretnél egy rendezvényt az",
   h2n: "Ultramarinos Martínezben?",
 
-  p: "Keress minket bátran telefonon vagy írj nekünk, ha szeretnél rendezvényt nálunk!",
+  p: "Bátran keress minket telefonon, vagy írj nekünk, ha rendezvényt szeretnél nálunk tartani!",
   btn: "kapcsolat",
   url: "/kapcsolat",
 };
