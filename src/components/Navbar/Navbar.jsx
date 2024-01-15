@@ -19,11 +19,11 @@ import { usePathname } from "next/navigation";
 import { links } from '../../app/links'
 
 const textContentHu = {
-  btnName: "asztalfoglalás",
+  btnName: "Rendelés",
 };
 
 const textContentEng = {
-  btnName: "book a table now",
+  btnName: "Order",
 };
 
 const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
@@ -131,7 +131,7 @@ const Navbar = ({ NavFooter, nav, stickyPosition, colorMobileMenu }) => {
           <div className={`${nav && style.btnNav}`}>
             <Button
               btnHoverPrefix={btnHoverPrefix === "true" ? true : false}
-              url={links.reservation}
+              url={links.wolt}
               name={btnEngLogic}
             />
           </div>

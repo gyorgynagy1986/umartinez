@@ -10,7 +10,7 @@ const bebas = Mukta({ subsets: ['latin'], weight: "700" })
 const ButtonGetInTouch = ({url, name, underline}) => {
 
   return (
-    <Link href={url}><button className={`${style.buttonGetInTouch} ${underline && style.underline} ${bebas.className}`}>{name}</button></Link>
+    <Link target="_blank" href={url}><button className={`${style.buttonGetInTouch} ${underline && style.underline} ${bebas.className}`}>{name}</button></Link>
     )
 }
 

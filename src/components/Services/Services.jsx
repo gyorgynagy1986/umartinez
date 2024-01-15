@@ -3,7 +3,7 @@
 import style from "./Services.module.css";
 import { Orelega_One } from "next/font/google";
 import Image from "next/image";
-import HeroCoverPhoto from "../../../public/assets/sections/Our_services2.webp";
+import HeroCoverPhoto from "../../../public/assets/sections/services.webp";
 
 const dosis = Orelega_One({ subsets: ["latin"], weight: "400" });
 
