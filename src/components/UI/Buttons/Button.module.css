@@ -1,11 +1,11 @@
 .button {
-  padding: 10px 20px;
+  padding: 8px 20px;
   background: var(--btn1Color);
+  border: 2px solid var(--btn1Color);
   color: var(--btnTextColor);
   cursor: pointer;
   font-size: 18px;
   line-height: auto;
-  border: none;
   transition: all 0.4ms ease-in;
   text-transform: uppercase;
   font-weight: 700;
@@ -50,7 +50,7 @@
 
 .butnBlue {
   background: transparent;
-  padding: 10px 20px;
+  padding: 8px 20px;
   color: var(--btn2Color);
   border: 2px solid var(--btn2Color);
   line-height: auto;
@@ -60,7 +60,7 @@
 }
 
 .butnBlue:hover {
-  padding: 10px 20px;
+  padding: 8px 20px;
   color: rgb(255, 255, 255);
   background:var(--btn2Color);;
 }

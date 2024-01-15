@@ -120,8 +120,14 @@
   margin-bottom: 3.8rem;
 }
 
+.btnContainerItem {
+  display: flex;
+   gap: 4rem;
+  align-items: center;
+}
+
 .btnContainerItem a:nth-child(1) {
-  margin-right: 5rem;
+
 }
 
 /* BREAK POINTS */
@@ -138,11 +144,17 @@
     padding-right: 4rem;
   }
 
+.btnContainer {
+  margin-top: 1.5rem;
+}
+
+
+
   .itemsContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 4rem;
   }
 
@@ -194,6 +206,10 @@
     max-width: 35rem;
     width: 100%;
   }
+
+  .btnContainerItem {
+gap: 3rem;  }
+
 }
 
 @media only screen and (max-width: 681px) {
@@ -206,6 +222,11 @@
   .container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .btnContainerItem {
+    justify-content: center;
+    align-items: center;
   }
 
   .itemsContainer {

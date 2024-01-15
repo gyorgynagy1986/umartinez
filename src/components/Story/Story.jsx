@@ -20,7 +20,7 @@ const textContent = {
 
 const textContentEn = {
   h4: "About us",
-  p: 'Since we opened the first authentic Spanish colmado in Budapest, next to Bartók Béla Street, next to St. Gellért Square, our mission has been to win the hearts of every guest who walks through our doors. ',
+  p: 'Since we opened Budapest’s first Spanish colmado next to St. Gellért Square, our mission has been to win the hearts of every guest who walks through our doors. ',
   p1: "Within our bar, you’ll find cured hams, delectable cheeses, olives, and a variety of culinary delights. On the shelves of our store, you'll discover special creams and sauces, high-quality canned fish, wines, beers, cavas, and many more, all sourced directly from Spain.",
   p2: "And the best part is that everything you find in the store can be enjoyed on-site or even taken home with you!",
   btn: "See the Menu",

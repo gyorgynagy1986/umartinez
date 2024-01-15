@@ -3,4 +3,5 @@ export const links = {
   instagram: "https://www.instagram.com/ultramarinosbp/",
   reservation:
     "https://reservours.com/ultramarinosmartinezspanyoldeli/tablereservation?s=instagram",
+    wolt:"https://wolt.com/hu/hun/budapest/venue/ultramarinos-martinez-tienda-bar"
 };

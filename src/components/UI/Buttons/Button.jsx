@@ -8,7 +8,7 @@ const mukta = Mukta({ subsets: ['latin'], weight: "700" })
 const Button = ({name, url, btnBlue, }) => {
 
   return (
-    <Link href={url}>
+    <Link href={url} target="_blank">
       <button 
         className={
           `${style.button}

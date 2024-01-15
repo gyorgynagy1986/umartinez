@@ -80,6 +80,10 @@ const Contact = () => {
                 url={links.reservation}
                 name={"asztalfoglalás"}
               />
+               <ButtonGetInTouch
+                url={links.wolt}
+                name={"Rendelés"}
+              />
             </div>
           </div>
         </div>
