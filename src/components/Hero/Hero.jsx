@@ -60,9 +60,9 @@ const Hero = ({ reservation, lang }) => {
         />
       </div>
       <div className={style.textContainer}>
-        <h1 className={orelega.className}>
-          {!lang ? textContent.h1 : textContentEn.h1}
-        </h1>
+      <h1 className={orelega.className}>
+         Ultramarinos Martínez <span style={{whiteSpace:"nowrap"}}>Deli & Bar</span>
+        </h1> 
         <p>{!lang ? textContent.p : textContentEn.p}</p>
         <div className={style.btnContainer}>
           <Button

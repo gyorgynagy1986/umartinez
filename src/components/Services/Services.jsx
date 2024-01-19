@@ -18,7 +18,7 @@ const textContent = {
 
 const textContentEn = {
   h2: "Services ",
-  p: "Book a table with us if you're organizing a company event, celebrating with friends, or simply looking to enjoy the ambience of Bartók with a glass of refreshing sangría. We are waiting for you with authentic spanish vibes!",
+  p: "Book a table with us if you're organizing a company event, celebrating with friends, or simply looking to enjoy the ambience of Bartók with a glass of refreshing sangría. We are waiting for you with authentic Spanish vibes!",
   // pn:"We are waiting for you with authentic Spanish vibes!",
   p1: "Corporate events",
   p2: "Get-togethers",
