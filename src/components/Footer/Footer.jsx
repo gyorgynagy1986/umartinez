@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
             <p>Grupo10.hu</p>
             <p className={style.mobileTurn}>|</p>
-            <p>2023</p>
+            <p>2024</p>
             <Link className={style.stdbromo} href={creatorlink}>
               Designed and developed by Studio Bromo
             </Link>
