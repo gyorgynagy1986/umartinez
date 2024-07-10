@@ -45,6 +45,13 @@ const photos = [
   { id: 17, title: "Ultramarinos Martínez geléria", imageUrl: photo22 },
 ];
 
+const preloadImage = (src) => {
+  if (typeof window !== 'undefined') {
+    const img = new window.Image();
+    img.src = src;
+  }
+};
+
 const PhotoGallery = ({ galleryClose, clickedItem }) => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(clickedItem - 1);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -95,10 +102,8 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
     for (let i = 1; i <= preloadCount; i++) {
       const nextIndex = (currentPhotoIndex + i) % photos.length;
       const prevIndex = (currentPhotoIndex - i + photos.length) % photos.length;
-      const imgNext = new window.Image();
-      const imgPrev = new window.Image();
-      imgNext.src = photos[nextIndex].imageUrl.src;
-      imgPrev.src = photos[prevIndex].imageUrl.src;
+      preloadImage(photos[nextIndex].imageUrl.src);
+      preloadImage(photos[prevIndex].imageUrl.src);
     }
   };
 
@@ -158,6 +163,15 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
           </div>
         </div>
       </div>
+      {photos.slice(currentPhotoIndex + 1, currentPhotoIndex + 4).map((photo, index) => (
+        <Image
+          key={index}
+          src={photo.imageUrl}
+          alt={`Preload ${photo.id}`}
+          style={{ display: 'none' }}
+          priority
+        />
+      ))}
     </div>
   );
 };
