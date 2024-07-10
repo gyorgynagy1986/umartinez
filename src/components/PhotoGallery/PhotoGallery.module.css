@@ -29,7 +29,7 @@
   height: 100vh;
   background-color: transparent;
   position: absolute;
-  z-index: 9989999899;
+  z-index: 9999999989;
 }
 
 .containerImage {
@@ -53,11 +53,13 @@
   object-fit: contain;
   max-height: 100%;
   max-width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.clickHandelerContainer {
-  width: 100%;
-  max-width: 8rem;
+.clickHandlerContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -74,7 +76,11 @@
   user-select: none;
 }
 
-.clickHandelerContainer img {
+.arrowWrapper {
+  padding: 10px; /* Add padding to make the arrows more clickable */
+}
+
+.clickHandlerContainer img {
   width: 20px;
 }
 
@@ -84,17 +90,8 @@
 }
 
 @media only screen and (max-width: 1366px) {
+  /* Add specific styles for this screen size if necessary */
 }
-
-/*
-@media only screen and (min-height: 1204px)  {
-    .containerImage  {
-        padding-top: 15%;
-        padding-bottom: 15%;
-    }
-}
-
-*/
 
 @media only screen and (max-width: 681px) {
   .container {
@@ -112,11 +109,11 @@
   }
 
   .containerImage img {
-    object-fit: cover;
     max-height: 90%;
     max-width: 100%;
   }
-  .clickHandelerContainer {
+  
+  .clickHandlerContainer {
     bottom: 10%;
   }
 }

@@ -22,99 +22,24 @@ import photo20 from "../../../public/assets/gallery/covers/Gallery21.jpg";
 import photo21 from "../../../public/assets/gallery/covers/Gallery22.jpg";
 import photo22 from "../../../public/assets/gallery/covers/Gallery23.jpg";
 
-
-const photoGalleryCoverPhots = [
-
- 
-  {
-    id: 1,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo2,
-  },
-  {
-    id: 2,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo3,
-  },
-  {
-    id: 3,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo4,
-  },
-  {
-    id: 4,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo5,
-  },
-  {
-    id: 5,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo6,
-  },
-
-  {
-    id: 6,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo8,
-  },
- 
-  {
-    id: 7,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo10,
-  },
- 
-  {
-    id: 8,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo12,
-  },
-  {
-    id: 9,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo13,
-  },
-
-  {
-    id: 10,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo15,
-  },
-  {
-    id: 11,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo16,
-  },
-  {
-    id: 12,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo17,
-  },
-  {
-    id: 13,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo18,
-  },
-  {
-    id: 14,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo19,
-  },
-  {
-    id: 15,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo20,
-  },
-  {
-    id: 16,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo21,
-  },
-  {
-    id: 17,
-    alt: "Ultramarinos Martínez geléria cover photos",
-    url: photo22,
-  },
+const photoGalleryCoverPhotos = [
+  { id: 1, alt: "Ultramarinos Martínez geléria cover photos", url: photo2 },
+  { id: 2, alt: "Ultramarinos Martínez geléria cover photos", url: photo3 },
+  { id: 3, alt: "Ultramarinos Martínez geléria cover photos", url: photo4 },
+  { id: 4, alt: "Ultramarinos Martínez geléria cover photos", url: photo5 },
+  { id: 5, alt: "Ultramarinos Martínez geléria cover photos", url: photo6 },
+  { id: 6, alt: "Ultramarinos Martínez geléria cover photos", url: photo8 },
+  { id: 7, alt: "Ultramarinos Martínez geléria cover photos", url: photo10 },
+  { id: 8, alt: "Ultramarinos Martínez geléria cover photos", url: photo12 },
+  { id: 9, alt: "Ultramarinos Martínez geléria cover photos", url: photo13 },
+  { id: 10, alt: "Ultramarinos Martínez geléria cover photos", url: photo15 },
+  { id: 11, alt: "Ultramarinos Martínez geléria cover photos", url: photo16 },
+  { id: 12, alt: "Ultramarinos Martínez geléria cover photos", url: photo17 },
+  { id: 13, alt: "Ultramarinos Martínez geléria cover photos", url: photo18 },
+  { id: 14, alt: "Ultramarinos Martínez geléria cover photos", url: photo19 },
+  { id: 15, alt: "Ultramarinos Martínez geléria cover photos", url: photo20 },
+  { id: 16, alt: "Ultramarinos Martínez geléria cover photos", url: photo21 },
+  { id: 17, alt: "Ultramarinos Martínez geléria cover photos", url: photo22 },
 ];
 
 const CoverPhotoItems = ({ photoGalleryHandler }) => {
@@ -124,23 +49,21 @@ const CoverPhotoItems = ({ photoGalleryHandler }) => {
 
   return (
     <>
-      {photoGalleryCoverPhots.map((coverPhoto) => (
+      {photoGalleryCoverPhotos.map((coverPhoto) => (
         <div
+          key={coverPhoto.id}
           onClick={() => handleClick(coverPhoto.id)}
           className={style.hoverProperty}
         >
           <Image
-            // priority
             placeholder="blur"
-            onClick={() => handleClick(coverPhoto.id)}
-            key={coverPhoto.id}
             alt={coverPhoto.alt}
             src={coverPhoto.url}
-          ></Image>
+          />
         </div>
       ))}
     </>
   );
 };
 
-export default CoverPhotoItems;
+export default React.memo(CoverPhotoItems);
