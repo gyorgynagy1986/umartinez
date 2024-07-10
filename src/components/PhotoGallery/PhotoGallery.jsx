@@ -68,6 +68,7 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
 
   useEffect(() => {
     setImageLoaded(false);
+    preloadImages();
   }, [currentPhotoIndex]);
 
   const handleImageLoad = () => {
@@ -86,6 +87,18 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
       handlePrevPhoto();
     } else if (touchDiffX < -50) {
       handleNextPhoto();
+    }
+  };
+
+  const preloadImages = () => {
+    const preloadCount = 3;
+    for (let i = 1; i <= preloadCount; i++) {
+      const nextIndex = (currentPhotoIndex + i) % photos.length;
+      const prevIndex = (currentPhotoIndex - i + photos.length) % photos.length;
+      const imgNext = new window.Image();
+      const imgPrev = new window.Image();
+      imgNext.src = photos[nextIndex].imageUrl.src;
+      imgPrev.src = photos[prevIndex].imageUrl.src;
     }
   };
 
@@ -150,4 +163,3 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
 };
 
 export default React.memo(PhotoGallery);
-
