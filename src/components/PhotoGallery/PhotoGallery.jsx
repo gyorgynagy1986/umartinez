@@ -18,7 +18,11 @@ import photo13 from "../../../public/assets/gallery/photos/Gallery14.webp";
 import photo15 from "../../../public/assets/gallery/photos/Gallery16.webp";
 import photo16 from "../../../public/assets/gallery/photos/Gallery17.webp";
 import photo17 from "../../../public/assets/gallery/photos/Gallery18.webp";
-
+import photo18 from "../../../public/assets/gallery/photos/Gallery19.jpg";
+import photo19 from "../../../public/assets/gallery/photos/Gallery20.jpg";
+import photo20 from "../../../public/assets/gallery/photos/Gallery21.jpg";
+import photo21 from "../../../public/assets/gallery/photos/Gallery22.jpg";
+import photo22 from "../../../public/assets/gallery/photos/Gallery23.jpg";
 
 
 import galleryCloseIcon from "../../../public/assets/icons/close.svg";
@@ -33,67 +37,92 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
    
     {
       id: 1,
-      title: "Photo 3",
+      title:"Ultramarinos Martínez geléria",
       imageUrl: photo2,
     },
     {
       id: 2,
-      title: "Photo 4",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo3,
     },
     {
       id: 3,
-      title: "Photo 5",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo4,
     },
     {
       id: 4,
-      title: "Photo 6",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo5,
     },
     {
       id: 5,
-      title: "Photo 7",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo6,
     },
   
     {
       id: 6,
-      title: "Photo 9",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo8,
     },
    
     {
       id: 7,
-      title: "Photo 11",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo10,
     },
    
     {
       id: 8,
-      title: "Photo 13",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo12,
     },
     {
       id: 8,
-      title: "Photo 14",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo13,
     },
    
     {
       id: 10,
-      title: "Photo 16",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo15,
     },
     {
       id: 11,
-      title: "Photo 17",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo16,
     },
     {
       id: 12,
-      title: "Photo 18",
+      title: "Ultramarinos Martínez geléria",
       imageUrl: photo17,
+    },
+    {
+      id: 13,
+      title: "Ultramarinos Martínez geléria",
+      imageUrl: photo18,
+    },
+    {
+      id: 14,
+      title: "Ultramarinos Martínez geléria",
+      imageUrl: photo19,
+    },
+    {
+      id: 15,
+      title: "Ultramarinos Martínez geléria",
+      imageUrl: photo20,
+    },
+    {
+      id: 16,
+      title: "Ultramarinos Martínez geléria",
+      imageUrl: photo21,
+    },
+    {
+      id: 17,
+      title: "Ultramarinos Martínez geléria",
+      imageUrl: photo22,
     },
   ];
 
