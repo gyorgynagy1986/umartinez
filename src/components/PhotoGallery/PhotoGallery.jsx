@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import style from "./PhotoGallery.module.css";
-import Image from "next/image";
 import left from "../../../public/assets/icons/left.svg";
 import right from "../../../public/assets/icons/right.svg";
 import galleryCloseIcon from "../../../public/assets/icons/close.svg";
@@ -124,6 +123,7 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
           src={galleryCloseIcon}
           alt="close button"
         />
+<<<<<<< HEAD
         {imageLoaded ? (
           <Image
             src={currentPhoto.imageUrl}
@@ -139,6 +139,14 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
             onLoad={handleImageLoad}
           />
         )}
+=======
+        <img
+          src={currentPhoto.imageUrl}
+          alt={currentPhoto.title}
+          onLoad={handleImageLoad}
+          style={{ visibility: imageLoaded ? 'visible' : 'hidden' }}
+        />
+>>>>>>> 7617461cf2eb25ecb95e0d59f6b2dc3af18629c9
         <div className={style.clickHandlerContainer}>
           <div className={style.arrowWrapper}>
             <Image
