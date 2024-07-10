@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import style from './page.module.css';
 import dynamic from 'next/dynamic';
 import CoverPhotoItems from "@/components/PhotoGallery/CoverPhotoItems";
@@ -28,6 +28,15 @@ const Gallery = () => {
     setGalleryOpen(false);
   };
 
+  useEffect(() => {
+    if (galleryOpen) {
+      document.documentElement.classList.add('no-scroll');
+    } else {
+      document.documentElement.classList.remove('no-scroll');
+    }
+  }, [galleryOpen]);
+
+  
   return (
     <>
       {!galleryOpen && <h1 className={`${style.h1} ${dosis.className}`}>Gallery</h1>}

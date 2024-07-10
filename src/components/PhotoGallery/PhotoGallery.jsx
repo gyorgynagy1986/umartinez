@@ -183,6 +183,7 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import style from "./PhotoGallery.module.css";
+import Image from "next/image";
 import left from "../../../public/assets/icons/left.svg";
 import right from "../../../public/assets/icons/right.svg";
 import galleryCloseIcon from "../../../public/assets/icons/close.svg";
