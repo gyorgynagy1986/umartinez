@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import style from "./PhotoGallery.module.css";
 import Image from "next/image";
-import dynamic from 'next/dynamic';
 import left from "../../../public/assets/icons/left.svg";
 import right from "../../../public/assets/icons/right.svg";
 import galleryCloseIcon from "../../../public/assets/icons/close.svg";
@@ -107,31 +106,43 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
           src={galleryCloseIcon}
           alt="close button"
         />
-        <Image
-          src={currentPhoto.imageUrl}
-          alt={currentPhoto.title}
-          priority
-          onLoad={handleImageLoad}
-          className={imageLoaded ? '' : style.blur}
-        />
-        <div className={style.clickHandlerContainer}>
+        {imageLoaded ? (
           <Image
-            width={15}
-            height={15}
-            onClick={handlePrevPhoto}
-            alt="previous button"
-            src={left}
+            src={currentPhoto.imageUrl}
+            alt={currentPhoto.title}
+            priority
+            onLoad={handleImageLoad}
           />
+        ) : (
+          <Image
+            src={currentPhoto.imageUrl}
+            alt={currentPhoto.title}
+            style={{ filter: "blur(10px)" }}
+            onLoad={handleImageLoad}
+          />
+        )}
+        <div className={style.clickHandlerContainer}>
+          <div className={style.arrowWrapper}>
+            <Image
+              width={15}
+              height={15}
+              onClick={handlePrevPhoto}
+              alt="previous button"
+              src={left}
+            />
+          </div>
           <p className={style.photoCounter}>
             {currentPhoto.id}/{photos.length}
           </p>
-          <Image
-            width={15}
-            height={15}
-            onClick={handleNextPhoto}
-            alt="next button"
-            src={right}
-          />
+          <div className={style.arrowWrapper}>
+            <Image
+              width={15}
+              height={15}
+              onClick={handleNextPhoto}
+              alt="next button"
+              src={right}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -139,3 +150,4 @@ const PhotoGallery = ({ galleryClose, clickedItem }) => {
 };
 
 export default React.memo(PhotoGallery);
+
