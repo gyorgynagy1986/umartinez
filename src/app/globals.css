@@ -90,3 +90,7 @@ a {
 h1, h2, h3, h4 {
   font-weight: 400 !important;
 }
+
+.no-scroll {
+  overflow: hidden !important;
+}
