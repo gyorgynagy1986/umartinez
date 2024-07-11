@@ -34,6 +34,7 @@ export default function Home() {
     setShowPopup(false);
     localStorage.setItem(POPUP_KEY, new Date().getTime());
   };
+  
   return (
     <>
       {showPopup && <VideoPopup videoUrl="https://www.youtube.com/embed/zljsi4r9v4s" onClose={handleClosePopup} />}
